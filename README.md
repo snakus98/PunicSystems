@@ -1,6 +1,6 @@
-# PunicSite — Bridewell Homepage Clone
+# PunicSite 
 
-Reproduction de la page d'accueil Bridewell (cyber security) avec **Next.js 15** (App Router), **TypeScript** et **Tailwind CSS v4**.
+Reproduction de la page d'accueil   (cyber security) avec **Next.js 15** (App Router), **TypeScript** et **Tailwind CSS v4**.
 
 ## Démarrer
 
