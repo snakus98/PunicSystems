@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #081528;
+  --color-navy-deep: #081528;
+  --color-purple: #6e29f6;
+  --color-purple-dark: #6e29f6;
+  --color-teal: #01f6f7;
+  --color-teal-dark: #01f6f7;
+  --color-skyblue: #eaeaea;
+  --color-gallery: #eaeaea;
+  --color-ink: #081528;
+  --color-muted: #081528;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #eaeaea;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  color: #eaeaea;
+  background: var(--color-purple);
+}
+
+.container-x {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(234, 234, 234, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 234, 234, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.fine-grid {
+  background-image:
+    linear-gradient(rgba(8, 21, 40, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 21, 40, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.button-focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-focus:focus-visible {
+  outline-color: var(--color-teal);
+}
+
+/* Hide scrollbar for horizontal sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Right-to-left logo marquee */
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 32s linear infinite;
+}
+
+.marquee-pause:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

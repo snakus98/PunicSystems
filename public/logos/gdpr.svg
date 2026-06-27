@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 80" fill="none">
+  <rect x="6" y="10" width="60" height="60" rx="13" fill="#0b2a6b"/>
+  <g fill="#f5c518">
+    <circle cx="36.0" cy="22.0" r="1.9"/>
+    <circle cx="27.0" cy="24.4" r="1.9"/>
+    <circle cx="45.0" cy="24.4" r="1.9"/>
+    <circle cx="20.4" cy="31.0" r="1.9"/>
+    <circle cx="51.6" cy="31.0" r="1.9"/>
+  </g>
+  <path d="M29 39 v-3 a7 7 0 0 1 14 0 v3" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <rect x="25" y="39" width="22" height="17" rx="3.5" fill="#ffffff"/>
+  <circle cx="36" cy="46" r="2.6" fill="#0b2a6b"/>
+  <rect x="35" y="46.5" width="2" height="5.5" rx="1" fill="#0b2a6b"/>
+  <text x="80" y="42" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#081528">GDPR</text>
+  <text x="81" y="61" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#6e29f6">DATA PROTECTION</text>
+</svg>
