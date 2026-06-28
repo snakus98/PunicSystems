@@ -2,15 +2,13 @@ import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AccreditationStrip from "@/components/AccreditationStrip";
-import EssentialIndustries from "@/components/EssentialIndustries";
-import CustomerStories from "@/components/CustomerStories";
-import MicrosoftPartner from "@/components/MicrosoftPartner";
-import Awards from "@/components/Awards";
-import Accreditations from "@/components/Accreditations";
-import Industries from "@/components/Industries";
-import LatestInsights from "@/components/LatestInsights";
-import Careers from "@/components/Careers";
-import SpeakToTeam from "@/components/SpeakToTeam";
+import WhyCompliance from "@/components/WhyCompliance";
+import WhatWeDo from "@/components/WhatWeDo";
+import StartJourney from "@/components/StartJourney";
+import HowWeWork from "@/components/HowWeWork";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Soc2Journey from "@/components/Soc2Journey";
+import IndustriesDeliverables from "@/components/IndustriesDeliverables";
 import Footer from "@/components/Footer";
 import FeedbackTab from "@/components/FeedbackTab";
 
@@ -21,15 +19,13 @@ export default function Home() {
       <Header />
       <Hero />
       <AccreditationStrip />
-      <EssentialIndustries />
-      <CustomerStories />
-      <MicrosoftPartner />
-      <Awards />
-      <Accreditations />
-      <Industries />
-      <LatestInsights />
-      <Careers />
-      <SpeakToTeam />
+      <WhyCompliance />
+      <WhatWeDo />
+      <StartJourney />
+      <HowWeWork />
+      <WhyChooseUs />
+      <Soc2Journey />
+      <IndustriesDeliverables />
       <Footer />
       <FeedbackTab />
     </main>

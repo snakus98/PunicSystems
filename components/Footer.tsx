@@ -31,6 +31,7 @@ const COLUMNS: { title: string; links: string[] }[] = [
 export default function Footer() {
   return (
     <footer
+      id="contact"
       className="relative -mt-10 bg-navy text-gallery"
       style={{
         clipPath: "polygon(0 0, 50% 40px, 100% 0, 100% 100%, 0 100%)",

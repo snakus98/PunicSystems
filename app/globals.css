@@ -62,6 +62,23 @@ body {
   outline-color: var(--color-teal);
 }
 
+.industry-dots {
+  background-image: radial-gradient(circle, #cbc5fb 2px, transparent 2.5px);
+  background-size: 18px 18px;
+}
+
+.soc2-rings {
+  background-color: #402077;
+  background-image: repeating-radial-gradient(
+    circle at 7% 50%,
+    transparent 0,
+    transparent 72px,
+    rgba(255, 255, 255, 0.11) 73px,
+    transparent 74px,
+    transparent 146px
+  );
+}
+
 /* Hide scrollbar for horizontal sliders */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -110,6 +127,28 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
+    animation: none;
+  }
+}
+
+/* Carousel slide fade-in */
+@keyframes slide-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slide-fade-in 0.55s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-fade {
     animation: none;
   }
 }
