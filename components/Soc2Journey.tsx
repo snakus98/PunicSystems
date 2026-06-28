@@ -14,7 +14,7 @@ export default function Soc2Journey() {
           </p>
           <h2
             id="soc2-journey-title"
-            className="mt-4 text-[42px] font-bold leading-[1.17] tracking-[-0.03em] text-white sm:text-[50px]"
+            className="mt-4 text-[32px] font-bold leading-[1.17] tracking-[-0.03em] text-white min-[430px]:text-[42px] sm:text-[50px]"
           >
             Start your SOC 2
             <span className="block">journey</span>

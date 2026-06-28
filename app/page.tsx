@@ -3,9 +3,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AccreditationStrip from "@/components/AccreditationStrip";
 import WhyCompliance from "@/components/WhyCompliance";
+import PracticalCompliance from "@/components/PracticalCompliance";
 import WhatWeDo from "@/components/WhatWeDo";
 import StartJourney from "@/components/StartJourney";
 import HowWeWork from "@/components/HowWeWork";
+import FaqSection from "@/components/FaqSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Soc2Journey from "@/components/Soc2Journey";
 import IndustriesDeliverables from "@/components/IndustriesDeliverables";
@@ -19,13 +21,17 @@ export default function Home() {
       <Header />
       <Hero />
       <AccreditationStrip />
-      <WhyCompliance />
-      <WhatWeDo />
-      <StartJourney />
-      <HowWeWork />
-      <WhyChooseUs />
-      <Soc2Journey />
-      <IndustriesDeliverables />
+      <div className="space-y-3 pt-3">
+        <WhyCompliance />
+        <PracticalCompliance />
+        <WhatWeDo />
+        <StartJourney />
+        <HowWeWork />
+        <FaqSection />
+        <WhyChooseUs />
+        <Soc2Journey />
+        <IndustriesDeliverables />
+      </div>
       <Footer />
       <FeedbackTab />
     </main>

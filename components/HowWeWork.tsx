@@ -1,173 +1,269 @@
+import Image from "next/image";
 import {
   ChartNoAxesCombined,
   ClipboardCheck,
-  FileCheck,
   Handshake,
-  MessageSquare,
+  Search,
   Settings,
+  ShieldCheck,
+  UsersRound,
   type LucideIcon,
 } from "lucide-react";
 
-type WorkStep = {
-  number: number;
-  title: string;
-  description: string;
+type PhilosophyPoint = {
   icon: LucideIcon;
-  gradient: string;
+  text: React.ReactNode;
 };
 
-const STEPS: WorkStep[] = [
+type WorkPrinciple = {
+  icon: LucideIcon;
+  title: string;
+  description: React.ReactNode;
+  accent: "purple" | "teal";
+};
+
+const PHILOSOPHY_POINTS: PhilosophyPoint[] = [
   {
-    number: 1,
-    title: "Understand",
-    description:
-      "We begin by learning about your business, your objectives, and the regulatory or customer requirements driving your project.",
-    icon: MessageSquare,
-    gradient: "from-[#22c5f3] via-[#1687ef] to-[#1646ce]",
+    icon: UsersRound,
+    text: (
+      <>
+        A management system only creates value if{" "}
+        <strong>people use it.</strong>
+      </>
+    ),
   },
   {
-    number: 2,
-    title: "Assess",
-    description:
-      "We evaluate your current controls, documentation, and governance to identify strengths, gaps, and priorities.",
+    icon: Handshake,
+    text: (
+      <>
+        Our objective is to help you <strong>build trust</strong>—with
+        customers, partners, regulators, and your own employees.
+      </>
+    ),
+  },
+  {
     icon: ClipboardCheck,
-    gradient: "from-[#34d4f4] via-[#168fec] to-[#1260da]",
+    text: (
+      <>
+        Our objective is not simply to help you <strong>pass an audit.</strong>
+      </>
+    ),
   },
   {
-    number: 3,
-    title: "Build",
-    description:
-      "Together we develop the processes, documentation, and controls needed to establish an effective management system.",
-    icon: Settings,
-    gradient: "from-[#9b5cf6] via-[#6d28ed] to-[#3320c7]",
-  },
-  {
-    number: 4,
-    title: "Prepare",
-    description:
-      "We conduct internal audits, support management reviews, and prepare your organization for external assessments.",
-    icon: FileCheck,
-    gradient: "from-[#3b82f6] via-[#235ae3] to-[#173bc7]",
-  },
-  {
-    number: 5,
-    title: "Improve",
-    description:
-      "Compliance is not a one-time project. We help organizations continuously improve their security and governance over time.",
-    icon: ChartNoAxesCombined,
-    gradient: "from-[#a855f7] via-[#7040ec] to-[#3336d6]",
+    icon: ShieldCheck,
+    text: (
+      <>
+        Certification becomes the <strong>natural outcome</strong> of a
+        well-managed security program.
+      </>
+    ),
   },
 ];
 
+const WORK_PRINCIPLES: WorkPrinciple[] = [
+  {
+    icon: UsersRound,
+    title: "Practical over theoretical",
+    description: (
+      <>
+        We focus on what works in your <strong>real environment.</strong>
+      </>
+    ),
+    accent: "purple",
+  },
+  {
+    icon: Search,
+    title: "Context over checklists",
+    description: (
+      <>
+        We tailor to <strong>your risks</strong>, operations, and business
+        reality.
+      </>
+    ),
+    accent: "teal",
+  },
+  {
+    icon: Settings,
+    title: "People over process",
+    description: (
+      <>
+        We make systems <strong>easy to adopt</strong> and sustainable for your
+        teams.
+      </>
+    ),
+    accent: "purple",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Improvement over compliance",
+    description: (
+      <>
+        We drive <strong>continuous improvement</strong>, not one-time
+        projects.
+      </>
+    ),
+    accent: "teal",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Trust over certification",
+    description: (
+      <>
+        We help you <strong>earn trust</strong> every day—certification follows
+        naturally.
+      </>
+    ),
+    accent: "purple",
+  },
+];
+
+function PhilosophyPoint({ point }: { point: PhilosophyPoint }) {
+  return (
+    <div className="grid grid-cols-[3.75rem_minmax(0,1fr)] items-start gap-4">
+      <span className="flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-full border border-[#ddd9fb] bg-gradient-to-br from-[#f7f5ff] to-white text-[#5b31ea] shadow-[0_10px_25px_rgba(76,50,196,0.08)]">
+        <point.icon size={29} strokeWidth={1.8} />
+      </span>
+      <p className="pt-1 text-[0.95rem] font-medium leading-6 text-[#10194a] sm:text-base">
+        {point.text}
+      </p>
+    </div>
+  );
+}
+
 export default function HowWeWork() {
   return (
-    <section className="relative overflow-hidden bg-[#f8f9ff] py-20 lg:py-24">
+    <section
+      aria-labelledby="philosophy-heading"
+      className="relative overflow-hidden bg-[#fbfbff] pb-12 lg:pb-16"
+    >
       <div
-        className="pointer-events-none absolute inset-0 opacity-40"
+        aria-hidden="true"
+        className="pointer-events-none absolute right-[-6rem] top-14 h-44 w-56 opacity-35"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(70,106,190,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(70,106,190,0.035) 1px, transparent 1px)",
-          backgroundSize: "30px 30px",
+            "repeating-radial-gradient(ellipse at center, transparent 0 14px, #b7a7ff 15px 16px, transparent 17px 29px)",
         }}
       />
-      <div className="pointer-events-none absolute -right-40 -top-72 h-[640px] w-[640px] rounded-full border border-[#9dbbfb]/30 shadow-[0_0_0_38px_rgba(157,187,251,0.08),0_0_0_76px_rgba(157,187,251,0.06),0_0_0_114px_rgba(157,187,251,0.04)]" />
-      <div className="pointer-events-none absolute -bottom-56 -left-56 h-[430px] w-[430px] rounded-full border border-[#9dbbfb]/30 shadow-[0_0_0_32px_rgba(157,187,251,0.08),0_0_0_64px_rgba(157,187,251,0.06)]" />
-      <div
-        className="pointer-events-none absolute left-7 top-5 h-16 w-32 opacity-50"
-        style={{
-          backgroundImage: "radial-gradient(#69a3ff 2px, transparent 2px)",
-          backgroundSize: "16px 16px",
-        }}
-      />
-      <div
-        className="pointer-events-none absolute bottom-7 right-8 h-24 w-32 opacity-35"
-        style={{
-          backgroundImage: "radial-gradient(#6e8df2 2px, transparent 2px)",
-          backgroundSize: "16px 16px",
-        }}
-      />
+      <div className="pointer-events-none absolute -right-48 top-[22rem] h-[31rem] w-[31rem] rounded-full border border-[#d9d1ff] opacity-65 shadow-[0_0_0_32px_rgba(221,215,255,0.28)]" />
 
-      <div className="container-x relative !max-w-[1440px]">
-        <div className="max-w-[760px]">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#1768db]">
-            How We Work
-          </p>
-          <div className="mt-3 h-1 w-44 rounded-full bg-gradient-to-r from-[#19bff0] via-[#2563eb] to-[#7c3aed]" />
-          <h2 className="mt-5 text-4xl font-bold leading-none tracking-[-0.04em] text-navy sm:text-5xl lg:text-[4rem]">
-            How <span className="text-[#1755d9]">We Work</span>
-          </h2>
-          <p className="mt-6 max-w-[710px] text-lg font-medium leading-8 text-navy/80 sm:text-xl">
-            Every engagement follows a structured methodology designed to
-            reduce uncertainty and keep projects moving forward.
-          </p>
-        </div>
+      <div className="mx-auto grid max-w-[1536px] lg:min-h-[565px] lg:grid-cols-[47%_53%]">
+        <div className="relative min-h-[390px] sm:min-h-[490px] lg:min-h-0">
+          <div className="absolute -right-5 inset-y-0 w-[93%] rounded-r-[48%] bg-[#e8e5ff]" />
+          <div className="absolute inset-0 overflow-hidden rounded-br-[9rem] sm:rounded-br-[13rem] lg:rounded-br-[18rem] lg:rounded-tr-[10rem]">
+            <Image
+              src="/bawer.png"
+              alt="A team discussing trust, security, and compliance"
+              fill
+              priority={false}
+              sizes="(max-width: 1024px) 100vw, 47vw"
+              className="object-cover object-center"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#09152b]/10 via-transparent to-white/5" />
+          </div>
 
-        <div className="relative mt-12 lg:mt-14">
+          <div className="absolute -bottom-7 right-[12%] z-10 rounded-full bg-white p-3 shadow-[0_16px_36px_rgba(76,45,220,0.22)] ring-1 ring-[#ded9ff] sm:-bottom-9 sm:p-4">
+            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-[#5730e9] ring-1 ring-[#e4e0ff] sm:h-24 sm:w-24">
+              <ShieldCheck size={52} strokeWidth={1.8} />
+            </span>
+          </div>
+
           <div
             aria-hidden="true"
-            className="absolute left-[7%] right-[7%] top-[4.15rem] hidden h-0.5 bg-gradient-to-r from-[#168eef] via-[#7136f1] to-[#168eef] xl:block"
-          >
-            <span className="absolute left-0 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white bg-[#168eef] shadow" />
-            <span className="absolute left-1/4 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white bg-[#2879ef] shadow" />
-            <span className="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white bg-[#7136f1] shadow" />
-            <span className="absolute left-3/4 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white bg-[#4d5ceb] shadow" />
-            <span className="absolute right-0 top-1/2 h-4 w-4 translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white bg-[#7136f1] shadow" />
-          </div>
-
-          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-5">
-            {STEPS.map((step) => (
-              <article key={step.number} className="relative flex flex-col pt-[4.6rem]">
-                <div className="flex h-full min-h-[292px] flex-col rounded-[1.35rem] border border-[#c8d8f5] bg-white/95 px-6 pb-7 pt-[4.65rem] shadow-[0_16px_38px_rgba(38,74,145,0.13)]">
-                  <div className="flex items-center gap-3">
-                    <span
-                      className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-lg font-bold text-white shadow-md ${step.gradient}`}
-                    >
-                      {step.number}
-                    </span>
-                    <h3 className="text-xl font-bold text-[#174fd0]">
-                      {step.title}
-                    </h3>
-                  </div>
-                  <div className="mx-auto mt-4 flex gap-1.5" aria-hidden="true">
-                    {Array.from({ length: 6 }).map((_, i) => (
-                      <span
-                        key={i}
-                        className="h-1 w-1 rounded-full bg-[#4e8df4]"
-                      />
-                    ))}
-                  </div>
-                  <p className="mt-5 text-[0.94rem] font-medium leading-[1.55] text-navy/85">
-                    {step.description}
-                  </p>
-                </div>
-
-                <div className="absolute left-1/2 top-0 z-10 -translate-x-1/2 rounded-full bg-white/95 p-2 shadow-[0_12px_28px_rgba(30,77,170,0.22)] ring-1 ring-[#b9cff8]">
-                  <div
-                    className={`flex h-[7.15rem] w-[7.15rem] items-center justify-center rounded-full bg-gradient-to-br text-white shadow-inner ring-4 ring-white ${step.gradient}`}
-                  >
-                    <step.icon size={54} strokeWidth={1.8} />
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+            className="absolute bottom-7 left-12 h-20 w-24 opacity-45"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #8f7cf4 2px, transparent 2.4px)",
+              backgroundSize: "16px 16px",
+            }}
+          />
         </div>
 
-        <div className="mx-auto mt-10 flex max-w-[900px] items-center gap-5 rounded-[2rem] border border-[#a9c3f5] bg-white/90 px-7 py-4 shadow-[0_14px_35px_rgba(38,74,145,0.12)] sm:px-10">
-          <span className="hidden shrink-0 rounded-full bg-white p-2 text-[#2757da] shadow-md ring-1 ring-[#bfd1f5] sm:flex">
-            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#dff2ff] to-[#eee8ff]">
-              <Handshake size={34} strokeWidth={2.2} />
-            </span>
-          </span>
-          <span className="hidden h-14 border-l border-dashed border-[#8eb0ed] sm:block" />
-          <div>
-            <p className="text-lg font-bold text-[#174fd0] sm:text-xl">
-              Structured. Collaborative. Built for lasting compliance.
+        <div className="relative flex items-center px-6 pb-14 pt-20 sm:px-10 lg:px-12 lg:py-16 xl:px-16">
+          <div className="w-full max-w-[700px]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.04em] text-[#5130e6] sm:text-base">
+              Our Philosophy
             </p>
-            <p className="mt-1 text-sm font-medium leading-6 text-navy/75 sm:text-base">
-              We partner with you at every step to deliver clarity, confidence,
-              and continuous improvement.
+            <span className="mt-4 block h-0.5 w-10 bg-[#5c35ed]" />
+            <h2
+              id="philosophy-heading"
+              className="mt-6 text-[2.35rem] font-bold leading-[1.06] tracking-[-0.035em] text-[#0e194b] sm:text-5xl xl:text-[3.25rem]"
+            >
+              Compliance should
+              <br />
+              never become
+              <br />
+              <span className="text-[#5a32ea]">shelfware.</span>
+            </h2>
+
+            <div className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:[&>*:nth-child(even)]:border-l sm:[&>*:nth-child(even)]:border-[#e1def3] sm:[&>*:nth-child(even)]:pl-8">
+              {PHILOSOPHY_POINTS.map((point, index) => (
+                <PhilosophyPoint key={index} point={point} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-x relative z-20 mt-12 !max-w-[1425px] lg:mt-9">
+        <div className="rounded-xl border border-white bg-white/95 px-5 pb-10 pt-7 shadow-[0_16px_50px_rgba(43,43,121,0.08)] sm:px-8 lg:min-h-[370px] lg:px-12 lg:pb-11">
+          <div className="text-center">
+            <p className="text-base font-extrabold uppercase tracking-[0.02em] text-[#5130e6] sm:text-lg">
+              How We Work
             </p>
+            <span className="mx-auto mt-3 block h-0.5 w-10 bg-[#5b35ed]" />
+          </div>
+
+          <div className="relative mt-7">
+            <div className="pointer-events-none absolute left-[10%] right-[10%] top-[2.65rem] hidden h-px bg-gradient-to-r from-[#7960ed]/45 via-[#5fcfd9]/55 to-[#7960ed]/45 lg:block" />
+            <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
+              {WORK_PRINCIPLES.map((principle, index) => {
+                const isPurple = principle.accent === "purple";
+                return (
+                  <article
+                    key={principle.title}
+                    className="relative flex flex-col items-center text-center"
+                  >
+                    <div
+                      className={`relative z-10 rounded-full bg-white p-2 shadow-[0_8px_24px_rgba(60,41,164,0.18)] ring-1 ${
+                        isPurple ? "ring-[#d8d0ff]" : "ring-[#c9eff2]"
+                      }`}
+                    >
+                      <span
+                        className={`flex h-[4.85rem] w-[4.85rem] items-center justify-center rounded-full ${
+                          isPurple
+                            ? "bg-gradient-to-br from-[#7040ef] to-[#4f23df] text-white"
+                            : "bg-[#f5ffff] text-[#08adbd] ring-1 ring-[#bceaf0]"
+                        }`}
+                      >
+                        <principle.icon size={39} strokeWidth={1.8} />
+                      </span>
+                    </div>
+
+                    {index < WORK_PRINCIPLES.length - 1 && (
+                      <span
+                        aria-hidden="true"
+                        className={`absolute -right-1.5 top-9 z-20 hidden h-3 w-3 rounded-full lg:block ${
+                          isPurple ? "bg-[#6135e8]" : "bg-[#0eb3c2]"
+                        }`}
+                      />
+                    )}
+
+                    <h3 className="mt-4 max-w-[190px] text-lg font-bold leading-6 text-[#0c1548]">
+                      {principle.title}
+                    </h3>
+                    <p
+                      className={`mt-3 max-w-[215px] text-[0.94rem] font-medium leading-6 text-[#10194a]/88 [&_strong]:font-bold ${
+                        isPurple
+                          ? "[&_strong]:text-[#5531e8]"
+                          : "[&_strong]:text-[#08aebd]"
+                      }`}
+                    >
+                      {principle.description}
+                    </p>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

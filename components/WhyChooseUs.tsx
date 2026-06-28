@@ -91,7 +91,7 @@ export default function WhyChooseUs() {
             </p>
             <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#6331e8] to-[#8b5cf6]" />
 
-            <h2 className="mt-8 text-[2.65rem] font-bold leading-[1.08] tracking-[-0.035em] text-navy sm:text-5xl lg:text-[3.75rem]">
+            <h2 className="mt-8 text-[2.05rem] font-bold leading-[1.08] tracking-[-0.035em] text-navy min-[430px]:text-[2.65rem] sm:text-5xl lg:text-[3.75rem]">
               Because they want{" "}
               <span className="text-[#653be2]">experienced advisors—</span>
               <br />

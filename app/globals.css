@@ -23,7 +23,7 @@ html {
 body {
   font-family: var(--font-sans);
   color: var(--color-ink);
-  background: #eaeaea;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,6 +37,18 @@ body {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-x {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-x {
+    padding-inline: 2.5rem;
+  }
 }
 
 .tech-grid {
