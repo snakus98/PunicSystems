@@ -161,12 +161,6 @@ export default function HowWeWork() {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#09152b]/10 via-transparent to-white/5" />
           </div>
 
-          <div className="absolute -bottom-7 right-[12%] z-10 rounded-full bg-white p-3 shadow-[0_16px_36px_rgba(76,45,220,0.22)] ring-1 ring-[#ded9ff] sm:-bottom-9 sm:p-4">
-            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-[#5730e9] ring-1 ring-[#e4e0ff] sm:h-24 sm:w-24">
-              <ShieldCheck size={52} strokeWidth={1.8} />
-            </span>
-          </div>
-
           <div
             aria-hidden="true"
             className="absolute bottom-7 left-12 h-20 w-24 opacity-45"
