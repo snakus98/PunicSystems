@@ -116,8 +116,8 @@ export default function HowWeWork() {
 
           <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-5">
             {STEPS.map((step) => (
-              <article key={step.number} className="relative pt-[4.6rem]">
-                <div className="flex min-h-[292px] flex-col rounded-[1.35rem] border border-[#c8d8f5] bg-white/95 px-6 pb-7 pt-[4.65rem] shadow-[0_16px_38px_rgba(38,74,145,0.13)]">
+              <article key={step.number} className="relative flex flex-col pt-[4.6rem]">
+                <div className="flex h-full min-h-[292px] flex-col rounded-[1.35rem] border border-[#c8d8f5] bg-white/95 px-6 pb-7 pt-[4.65rem] shadow-[0_16px_38px_rgba(38,74,145,0.13)]">
                   <div className="flex items-center gap-3">
                     <span
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-lg font-bold text-white shadow-md ${step.gradient}`}
