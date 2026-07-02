@@ -91,6 +91,72 @@ body {
   );
 }
 
+.project-hero-curve {
+  clip-path: ellipse(74% 106% at 0% 50%);
+}
+
+.project-hero-halo {
+  clip-path: ellipse(76% 108% at 0% 50%);
+}
+
+.project-image-mask {
+  clip-path: ellipse(76% 150% at 100% 0%);
+}
+
+.project-image-halo {
+  clip-path: ellipse(79% 154% at 100% 0%);
+}
+
+.project-purple-glow {
+  background: radial-gradient(
+    circle at center,
+    rgba(109, 41, 246, 0.55) 0,
+    rgba(109, 41, 246, 0.25) 38%,
+    rgba(109, 41, 246, 0.08) 62%,
+    transparent 72%
+  );
+}
+
+.project-orbit {
+  border: 2px dotted rgba(255, 255, 255, 0.66);
+  box-shadow:
+    0 0 0 34px rgba(255, 255, 255, 0.035),
+    inset 0 0 0 42px rgba(255, 255, 255, 0.025);
+}
+
+.project-orbit::after {
+  position: absolute;
+  inset: 14%;
+  content: "";
+  border: 1px dashed rgba(255, 255, 255, 0.24);
+  border-radius: 9999px;
+}
+
+.project-dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 3px, transparent 3.5px);
+  background-size: 18px 18px;
+}
+
+.project-image-fade-dots {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 2.5px, transparent 3px);
+  background-size: 14px 14px;
+  mask-image: linear-gradient(135deg, transparent 0%, #000 45%, transparent 100%);
+}
+
+@media (min-width: 1024px) {
+  .approach-card:not(:last-child)::after {
+    position: absolute;
+    top: -2.35rem;
+    left: 57%;
+    z-index: 0;
+    width: 92%;
+    height: 3.75rem;
+    content: "";
+    border-top: 2px dashed rgba(112, 137, 190, 0.55);
+    border-radius: 50% 50% 0 0;
+  }
+}
+
 /* Hide scrollbar for horizontal sliders */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

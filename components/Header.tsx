@@ -24,12 +24,18 @@ const INDUSTRY_ITEMS = [
   { label: "Banking & Financial Services", href: "#" },
 ];
 
+const PROJECT_ITEMS = [
+  { label: "Project 1", href: "/projects/project-1" },
+  { label: "Project 2", href: "/projects/project-2" },
+  { label: "Project 3", href: "/projects/project-3" },
+];
+
 const NAV: NavItem[] = [
   { type: "link", label: "Home", href: "/" },
   { type: "services" },
   { type: "dropdown", label: "Company", items: COMPANY_ITEMS },
   { type: "dropdown", label: "Industries", items: INDUSTRY_ITEMS },
-  { type: "link", label: "Our projects", href: "#" },
+  { type: "dropdown", label: "Our projects", items: PROJECT_ITEMS },
   { type: "link", label: "GRC solution", href: "#" },
 ];
 

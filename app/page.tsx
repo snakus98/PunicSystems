@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AccreditationStrip />
-      <div className="space-y-3 pt-3">
+      <div>
         <WhyCompliance />
         <PracticalCompliance />
         <WhatWeDo />
