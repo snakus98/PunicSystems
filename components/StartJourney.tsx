@@ -25,7 +25,7 @@ export default function StartJourney() {
             href="#"
             className="button-focus mt-8 inline-block rounded-md bg-purple px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-purple-dark"
           >
-            Speak to our Cyber Security Experts
+            Speak to our Experts
           </a>
         </div>
       </div>

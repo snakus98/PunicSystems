@@ -2,7 +2,7 @@ import {
   ArrowRight,
   ShieldCheck,
   Lock,
-  Crosshair,
+  ShieldAlert,
   FileLock2,
   ChevronRight,
   type LucideIcon,
@@ -18,12 +18,12 @@ type Service = {
 const SERVICES: Service[] = [
   {
     icon: ShieldCheck,
-    title: "Cyber Security Consultancy",
+    title: "Consultancy Services",
     description:
       "Strategic advisory for cloud, enterprise, and operational technology environments, built around the risk profile of essential organisations.",
     popular: [
       "Microsoft Cloud Security Services",
-      "Cyber Security Services",
+      "Advisory Services",
       "Risk Assessment",
     ],
   },
@@ -39,14 +39,14 @@ const SERVICES: Service[] = [
     ],
   },
   {
-    icon: Crosshair,
-    title: "Penetration Testing",
+    icon: ShieldAlert,
+    title: "24/7 Incident Response",
     description:
-      "Offensive testing that validates real-world exposure across applications, infrastructure, cloud estates, and human attack paths.",
+      "Round-the-clock specialists who identify, contain, and eliminate breaches to keep essential operations running with minimal disruption.",
     popular: [
-      "Red Team Assessment",
-      "Phishing Assessments",
-      "Social Engineering Testing",
+      "Digital Forensics & Incident Response",
+      "24/7 Incident Response Services",
+      "Compromise Assessment Services",
     ],
   },
   {
@@ -118,8 +118,9 @@ export default function EssentialIndustries() {
             Protecting Essential Industries
           </h2>
           <p className="mt-5 text-base leading-8 text-muted">
-            Punic provides practical cyber security capability for organisations
-            where disruption has real operational, regulatory, and public impact.
+            Punic provides practical assurance and compliance capability for
+            organisations where disruption has real operational, regulatory, and
+            public impact.
           </p>
         </div>
 

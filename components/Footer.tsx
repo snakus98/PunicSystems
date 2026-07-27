@@ -4,10 +4,9 @@ const COLUMNS: { title: string; links: string[] }[] = [
   {
     title: "Services",
     links: [
-      "Cyber Security Consultancy",
+      "Consultancy Services",
       "Managed Security",
       "Data Privacy",
-      "Penetration Testing",
       "24/7 Incident Response",
     ],
   },
@@ -47,7 +46,7 @@ export default function Footer() {
               <span className="text-3xl font-bold tracking-tight">Punic</span>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-7 text-gallery/62">
-              Cyber resilience, managed security, assurance, and incident
+              Resilience, managed security, assurance, and incident
               response for organisations where downtime is not acceptable.
             </p>
           </div>

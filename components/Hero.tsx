@@ -38,14 +38,14 @@ export default function Hero() {
 
       <div className="container-x relative z-10 flex min-h-[560px] flex-col justify-center pb-44 pt-24">
         <h1 className="max-w-3xl text-5xl font-bold leading-[1.05] text-gallery sm:text-6xl lg:text-7xl">
-          Cyber Security.
+          Assurance.
           <br />
           <span className="text-teal">Where it Matters.</span>
         </h1>
 
         <p className="mt-7 max-w-xl text-lg leading-8 text-gallery/85">
           We protect Critical National Infrastructure (CNI) and organisations
-          who require the highest standard of cyber security.
+          who require the highest standards of resilience and assurance.
         </p>
 
         <div className="mt-9">

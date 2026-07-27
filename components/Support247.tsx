@@ -27,12 +27,12 @@ export default function Support247() {
             id="support-247-heading"
             className="mt-5 text-4xl font-bold leading-[1.13] tracking-[-0.035em] sm:text-5xl xl:text-[3.5rem]"
           >
-            24/7 Cyber Security
+            24/7 Incident
             <br />
-            Support
+            Response Support
           </h2>
           <p className="mt-6 max-w-lg text-base font-medium leading-8 text-white/82 sm:text-lg">
-            Cyber incidents don&apos;t follow office hours. Our experts are
+            Incidents don&apos;t follow office hours. Our experts are
             available around the clock to help you respond quickly, minimize
             disruption, and keep your operations secure.
           </p>
@@ -53,7 +53,7 @@ export default function Support247() {
       <div className="relative min-h-[360px] bg-[#061335] lg:min-h-0">
         <Image
           src="/support-24-7.png"
-          alt="Cyber security analyst providing continuous threat monitoring"
+          alt="Analyst providing continuous threat monitoring"
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover object-center"

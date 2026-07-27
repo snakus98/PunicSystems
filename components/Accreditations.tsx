@@ -3,7 +3,7 @@ const CERTS = [
   "NCSC Cyber Incident Exercising",
   "NCSC Consultancy Risk Management",
   "NCSC Consultancy Audit & Review",
-  "NCSC CHECK Penetration Testing",
+  "ISO/IEC 27001 Lead Auditor",
   "NCSC Cyber Incident Response Standard Level",
   "NCSC Consultancy Security Architecture",
   "NCSC Cyber Resilience Audit",
@@ -21,8 +21,8 @@ export default function Accreditations() {
             Accreditations and Certifications
           </h2>
           <p className="mt-5 text-base leading-8 text-muted">
-            Our consultants work to recognised cyber security, privacy, and
-            resilience standards so recommendations are practical, auditable, and
+            Our consultants work to recognised privacy, resilience, and
+            compliance standards so recommendations are practical, auditable, and
             repeatable.
           </p>
         </div>

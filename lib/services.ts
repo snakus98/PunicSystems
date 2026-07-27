@@ -11,47 +11,90 @@ export type ServiceCategory = {
 export const SERVICES: ServiceCategory[] = [
   {
     key: "consultancy",
-    name: "Cyber Security Consultancy",
-    overviewTitle: "Cyber Security Consultancy Overview",
+    name: "Consultancy Services",
+    overviewTitle: "Services Overview",
     overviewText:
-      "Our services cover on-premise, cloud and operational technology environments and can be leveraged to support transformation programmes or meet specific industry requirements.",
+      "Helping organizations implement, audit, and maintain internationally recognized management systems and compliance frameworks.",
     groups: [
       {
-        heading: "Cyber Security Services",
+        heading: "Management System Implementation",
         links: [
-          "Microsoft Services",
-          "Cyber Security Audit",
-          "Cyber Security Architecture",
-          "Cyber Security Merger and Acquisition Services",
-          "Cloud Security Posture Management",
-          "Information Security Office as a Service (ISOS)",
-          "NCSC Assured Services",
-          "Risk Assessment",
-          "Risk Management",
-          "Endpoint Security Posture Assessment",
-          "Operational Technology Services",
+          "ISO/IEC 27001 – Information Security Management",
+          "ISO/IEC 42001 – Artificial Intelligence Management",
+          "ISO/IEC 27701 – Privacy Information Management",
+          "ISO 22301 – Business Continuity Management",
+          "ISO 37301 – Compliance Management",
+          "ISO 31000 – Risk Management",
+        ],
+      },
+      {
+        heading: "Internal Audit & Assurance",
+        links: [
+          "ISO/IEC 27001 Internal Audits",
+          "ISO/IEC 42001 Internal Audits",
+          "ISO/IEC 27701 Internal Audits",
+          "ISO 22301 Internal Audits",
+          "Certification Readiness Assessments",
+          "Independent Compliance Reviews",
+        ],
+      },
+      {
+        heading: "Governance, Risk & Compliance (GRC)",
+        links: [
+          "Governance Framework Development",
+          "Enterprise Risk Management",
+          "Compliance Gap Assessments",
+          "Risk Assessments",
+          "Policy & Procedure Development",
+          "Management Review Support",
+        ],
+      },
+      {
+        heading: "Regulatory Compliance",
+        links: [
+          "GDPR Compliance",
+          "NIS2 Readiness",
+          "DORA Readiness",
+          "EU AI Act Readiness",
+          "Regulatory Gap Analysis",
+          "Compliance Roadmaps",
+        ],
+      },
+      {
+        heading: "Certification Support",
+        links: [
+          "Gap Analysis",
+          "ISMS Documentation Development",
+          "Statement of Applicability (SoA)",
+          "Corrective Action Support",
+          "Certification Preparation",
+          "Surveillance Audit Support",
+        ],
+      },
+      {
+        heading: "Advisory Services",
+        links: [
+          "Virtual Information Security Manager (vISM)",
           "Compliance-as-a-Service",
+          "Executive Compliance Advisory",
+          "Security Governance Consulting",
+          "Ongoing Compliance Support",
+          "Awareness & Executive Workshops",
         ],
       },
       {
-        heading: "Cyber Security Frameworks",
+        heading: "Frameworks We Support",
         links: [
-          "ISO 27001",
+          "ISO/IEC 27001",
+          "ISO/IEC 42001",
+          "ISO/IEC 27701",
           "ISO 22301",
-          "ISO 9001",
-          "PCI DSS Consultancy",
-          "NCSC Cyber Assessment Framework (CAF)",
-          "Defence Cyber Certification (DCC)",
-        ],
-      },
-      {
-        heading: "AI Security Consulting Services",
-        links: [
-          "AI Readiness Assessment & Strategy Services",
-          "AI Governance, Risk Management & Compliance Services",
-          "AI Architecture Design & Engineering Services",
-          "AI Security Controls & Implementation Services",
-          "AI Validation, Testing & Assurance Services",
+          "ISO 37301",
+          "ISO 31000",
+          "GDPR",
+          "NIS2",
+          "DORA",
+          "EU AI Act",
         ],
       },
     ],
@@ -104,35 +147,11 @@ export const SERVICES: ServiceCategory[] = [
     ],
   },
   {
-    key: "pentest",
-    name: "Penetration Testing",
-    overviewTitle: "Penetration Testing Overview",
-    overviewText:
-      "Assess the security of your organisation's network from an internal and external perspective by completing a penetration test with Punic's highly certified and experienced offensive security experts.",
-    groups: [
-      {
-        heading: "Penetration Testing Services",
-        links: [
-          "Wireless Penetration Testing",
-          "Red Team Assessment",
-          "Open Source Intelligence",
-          "Phishing Assessments",
-          "Social Engineering Testing",
-          "Mobile Application Penetration Testing",
-          "Web Application Testing",
-          "Infrastructure Penetration Testing",
-          "Cloud Infrastructure Assessments",
-          "AI Penetration Testing",
-        ],
-      },
-    ],
-  },
-  {
     key: "incident",
     name: "24/7 Incident Response",
     overviewTitle: "24/7 Incident Response Overview",
     overviewText:
-      "Our cyber security incident response specialists are available 24/7 to identify, contain, and eliminate breaches within your infrastructure.",
+      "Our incident response specialists are available 24/7 to identify, contain, and eliminate breaches within your infrastructure.",
     groups: [
       {
         heading: "Incident Response Services",

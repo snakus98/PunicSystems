@@ -8,7 +8,6 @@ import {
   ShieldCheck,
   Radar,
   FileLock2,
-  Crosshair,
   ShieldAlert,
   ArrowUpRight,
   type LucideIcon,
@@ -19,7 +18,6 @@ const ICONS: Record<string, LucideIcon> = {
   consultancy: ShieldCheck,
   managed: Radar,
   privacy: FileLock2,
-  pentest: Crosshair,
   incident: ShieldAlert,
 };
 

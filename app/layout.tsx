@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Punic | Cyber Security Where it Counts",
+  title: "Punic | Where it Counts",
   description:
-    "Punic helps essential organisations improve cyber resilience, managed security, assurance, and incident response.",
+    "Punic helps essential organisations improve resilience, managed security, assurance, and incident response.",
 };
 
 export const viewport: Viewport = {

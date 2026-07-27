@@ -149,7 +149,7 @@ export default function ProjectTwoPage() {
         <div className="absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden lg:block">
           <Image
             src="/olap.png"
-            alt="Bouclier de cybersécurité avec coche bleue"
+            alt="Bouclier de sécurité avec coche bleue"
             fill
             priority
             quality={100}
@@ -217,7 +217,7 @@ export default function ProjectTwoPage() {
         <div className="relative mx-[clamp(1.25rem,4vw,3.5rem)] mb-8 h-52 overflow-hidden rounded-2xl sm:h-72 lg:hidden">
           <Image
             src="/olap.png"
-            alt="Bouclier de cybersécurité avec coche bleue"
+            alt="Bouclier de sécurité avec coche bleue"
             fill
             priority
             quality={100}
