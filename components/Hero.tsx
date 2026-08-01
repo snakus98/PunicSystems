@@ -36,15 +36,18 @@ export default function Hero() {
       <div className="tech-grid absolute inset-0 z-[1] opacity-25" />
       <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_72%_30%,rgba(1,246,247,0.10),transparent_38%),radial-gradient(circle_at_88%_82%,rgba(110,41,246,0.16),transparent_40%),linear-gradient(90deg,rgba(8,21,40,0.94)_0%,rgba(8,21,40,0.82)_50%,rgba(8,21,40,0.55)_100%)]" />
 
-      <div className="container-x relative z-10 flex min-h-[calc(100svh-7.5rem)] flex-col justify-center pb-[clamp(9rem,17vh,13rem)] pt-[clamp(2rem,6vh,4.5rem)]">
-        <h1 className="max-w-[22ch] text-[clamp(2.1rem,4.6vw,4.2rem)] font-bold leading-[1.08] tracking-[-0.02em] text-gallery">
-          Your Strategic Partner for{" "}
+      <div className="container-x relative z-10 flex min-h-[calc(100svh-7.5rem)] flex-col justify-center pb-[clamp(9rem,17vh,13rem)] pt-[clamp(2rem,6vh,4.5rem)] text-center">
+        <h1 className="mx-auto max-w-[31ch] text-[clamp(2.3rem,5.2vw,4.9rem)] font-bold leading-[1.08] tracking-[-0.02em] text-gallery">
+          Your Strategic Partner for
+          <br />
           <span className="text-teal">
-            ISO Standards, EU Regulations and Digital Trust Frameworks
+            ISO Standards, EU Regulations
+            <br />
+            and Digital Trust Frameworks
           </span>
         </h1>
 
-        <p className="mt-[clamp(1rem,2.4vh,1.9rem)] max-w-[62ch] text-[clamp(1rem,1.25vw,1.35rem)] leading-[1.6] text-gallery/85">
+        <p className="mx-auto mt-[clamp(1rem,2.4vh,1.9rem)] max-w-[62ch] text-[clamp(1.05rem,1.4vw,1.5rem)] leading-[1.6] text-gallery/85">
           Delivering tailored compliance solutions that secure your operations,
           protect your data, and prepare your organization for the future.
         </p>
@@ -52,7 +55,7 @@ export default function Hero() {
         <div className="mt-[clamp(1.3rem,3vh,2.4rem)]">
           <a
             href="#services"
-            className="button-focus inline-flex items-center justify-center rounded-md bg-purple px-7 py-4 text-sm font-semibold text-gallery transition-colors hover:bg-purple-dark"
+            className="button-focus inline-flex items-center justify-center rounded-md bg-purple px-9 py-[1.15rem] text-base font-semibold text-gallery transition-colors hover:bg-purple-dark"
           >
             Explore Services
           </a>

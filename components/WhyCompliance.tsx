@@ -76,8 +76,11 @@ export default function WhyCompliance() {
             </h2>
 
             <p className="mt-6 max-w-[520px] text-base leading-7 text-navy/68 sm:text-lg">
-              Many organizations pursue ISO 27001 or GDPR compliance because
-              they have to.
+              Many organizations approach compliance as a regulatory necessity.
+              We help them turn ISO standards, cybersecurity requirements,
+              privacy obligations, and AI governance frameworks into
+              opportunities to strengthen security, improve resilience, and
+              build trust.
             </p>
 
             <ol className="relative mt-7 space-y-3 pl-7 sm:pl-8">
