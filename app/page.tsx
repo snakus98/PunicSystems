@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AccreditationStrip />
-      <div>
+      <div className="home-sections">
         <WhyCompliance />
         <PracticalCompliance />
         <WhatWeDo />

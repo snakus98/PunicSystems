@@ -1,54 +1,5 @@
 import Image from "next/image";
-import {
-  ArrowRight,
-  Handshake,
-  MessageCircleMore,
-  MessageSquareText,
-  Target,
-  type LucideIcon,
-} from "lucide-react";
-
-type Step = {
-  number: string;
-  title: React.ReactNode;
-  icon: LucideIcon;
-};
-
-const STEPS: Step[] = [
-  {
-    number: "01",
-    title: (
-      <>
-        Understand
-        <br />
-        your objectives
-      </>
-    ),
-    icon: Target,
-  },
-  {
-    number: "02",
-    title: (
-      <>
-        Provide tailored
-        <br />
-        guidance
-      </>
-    ),
-    icon: MessageSquareText,
-  },
-  {
-    number: "03",
-    title: (
-      <>
-        Build long-term
-        <br />
-        partnership
-      </>
-    ),
-    icon: Handshake,
-  },
-];
+import { ArrowRight, MessageCircleMore } from "lucide-react";
 
 export default function LetsTalk() {
   return (
@@ -133,41 +84,6 @@ export default function LetsTalk() {
             <div className="pointer-events-none absolute bottom-7 left-[12%] h-4 w-[95%] -rotate-3 rounded-full bg-[#05ecf5]/55 blur-[8px]" />
             <div className="pointer-events-none absolute bottom-2 left-[31%] h-3 w-[78%] -rotate-6 rounded-full bg-[#6739f5]/55 blur-[9px]" />
           </div>
-        </div>
-
-        <div className="relative z-20 grid gap-4 px-6 pb-16 sm:px-10 lg:-mt-1 lg:grid-cols-3 lg:gap-0 lg:px-8 lg:pb-0 xl:px-10">
-          {STEPS.map((step, index) => (
-            <article
-              key={step.number}
-              className="relative flex min-h-[205px] items-center gap-6 overflow-visible border border-white/85 bg-white/70 px-7 py-8 shadow-[0_10px_45px_rgba(44,112,145,0.07)] backdrop-blur-sm sm:px-10 lg:border-b-0 lg:px-7 xl:gap-8 xl:px-12"
-              style={
-                index === 0
-                  ? { clipPath: "polygon(12% 0, 91% 0, 100% 100%, 0 100%)" }
-                  : index === 1
-                    ? { clipPath: "polygon(0 0, 87% 0, 100% 100%, 10% 100%)" }
-                    : { clipPath: "polygon(0 0, 100% 0, 91% 100%, 10% 100%)" }
-              }
-            >
-              <span className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border-[3px] border-white bg-white/90 text-[#5626f2] shadow-[0_0_0_3px_rgba(94,228,240,0.24),0_8px_24px_rgba(56,58,162,0.08)]">
-                <step.icon size={45} strokeWidth={1.8} />
-              </span>
-
-              <div>
-                <p className="text-xl font-medium text-[#5828f0]">
-                  {step.number}
-                </p>
-                <h3 className="mt-3 text-lg font-bold leading-[1.35] tracking-[-0.02em] text-[#081641] sm:text-xl">
-                  {step.title}
-                </h3>
-              </div>
-
-              {index < STEPS.length - 1 && (
-                <span className="pointer-events-none absolute -right-4 top-1/2 z-30 hidden w-12 -translate-y-1/2 border-t-2 border-dashed border-[#18c6eb] lg:block">
-                  <span className="absolute -right-0.5 -top-[5px] h-2 w-2 rotate-45 border-r-2 border-t-2 border-[#18c6eb]" />
-                </span>
-              )}
-            </article>
-          ))}
         </div>
       </div>
     </section>
