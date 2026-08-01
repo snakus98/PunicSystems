@@ -474,7 +474,7 @@ export default function ProjectOnePage() {
                 <div
                   key={i}
                   aria-hidden
-                  className="absolute top-0 hidden -translate-y-1/2 items-center xl:flex"
+                  className="absolute top-0 z-20 hidden -translate-y-1/2 items-center xl:flex"
                   style={{
                     left: `calc(${12.5 + i * 25}% + 68px)`,
                     width: "calc(25% - 136px)",
