@@ -189,7 +189,7 @@ export default function HowWeWork() {
               <span className="text-[#5a32ea]">shelfware.</span>
             </h2>
 
-            <div className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 sm:[&>*:nth-child(even)]:border-l sm:[&>*:nth-child(even)]:border-[#e1def3] sm:[&>*:nth-child(even)]:pl-8">
+            <div className="mt-8 grid gap-x-8 gap-y-8 xl:grid-cols-2 xl:[&>*:nth-child(even)]:border-l xl:[&>*:nth-child(even)]:border-[#e1def3] xl:[&>*:nth-child(even)]:pl-8">
               {PHILOSOPHY_POINTS.map((point, index) => (
                 <PhilosophyPoint key={index} point={point} />
               ))}

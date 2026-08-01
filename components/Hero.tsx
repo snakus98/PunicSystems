@@ -37,12 +37,14 @@ export default function Hero() {
       <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_72%_30%,rgba(1,246,247,0.10),transparent_38%),radial-gradient(circle_at_88%_82%,rgba(110,41,246,0.16),transparent_40%),linear-gradient(90deg,rgba(8,21,40,0.94)_0%,rgba(8,21,40,0.82)_50%,rgba(8,21,40,0.55)_100%)]" />
 
       <div className="container-x relative z-10 flex min-h-[calc(100svh-7.5rem)] flex-col justify-center pb-[clamp(9rem,17vh,13rem)] pt-[clamp(2rem,6vh,4.5rem)] text-center">
-        <h1 className="mx-auto max-w-[31ch] text-[clamp(2.3rem,5.2vw,4.9rem)] font-bold leading-[1.08] tracking-[-0.02em] text-gallery">
-          Your Strategic Partner for
-          <br />
-          <span className="text-teal">
+        {/* Each line is nowrap so the cyan half always reads as exactly two
+            lines; the vw-led clamp keeps the longest line inside the viewport. */}
+        <h1 className="mx-auto text-[clamp(1.5rem,4.85vw,4.6rem)] font-bold leading-[1.1] tracking-[-0.02em] text-gallery">
+          <span className="block whitespace-nowrap">Your Strategic Partner for</span>
+          <span className="block whitespace-nowrap text-teal">
             ISO Standards, EU Regulations
-            <br />
+          </span>
+          <span className="block whitespace-nowrap text-teal">
             and Digital Trust Frameworks
           </span>
         </h1>
