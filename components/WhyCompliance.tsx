@@ -61,12 +61,12 @@ export default function WhyCompliance() {
       <div className="pointer-events-none absolute right-[-6rem] top-[9.5rem] hidden h-[42rem] w-[42rem] rounded-full border border-[#1fc7df]/25 xl:block" />
 
       <div className="container-x relative !max-w-[1420px]">
-        <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:gap-20">
+        <div className="grid items-center gap-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-14 xl:gap-16">
           <div className="relative z-10">
             <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#11adcf]">
               Why Compliance
             </p>
-            <h2 className="mt-5 max-w-[650px] text-[2.2rem] font-bold leading-[1.03] tracking-[-0.035em] text-navy min-[430px]:text-[2.65rem] sm:text-5xl xl:text-[3.65rem]">
+            <h2 className="mt-5 max-w-[760px] text-[2.2rem] font-bold leading-[1.03] tracking-[-0.035em] text-navy min-[430px]:text-[2.65rem] sm:text-5xl xl:text-[3.65rem]">
               Compliance Should
               <br className="hidden sm:block" /> Help You Grow—
               <br />
@@ -75,7 +75,7 @@ export default function WhyCompliance() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-[520px] text-base leading-7 text-navy/68 sm:text-lg">
+            <p className="mt-6 max-w-[680px] text-base leading-7 text-navy/68 sm:text-lg">
               Many organizations approach compliance as a regulatory necessity.
               We help them turn ISO standards, cybersecurity requirements,
               privacy obligations, and AI governance frameworks into
@@ -111,7 +111,7 @@ export default function WhyCompliance() {
               ))}
             </ol>
 
-            <div className="mt-7 max-w-[570px] space-y-4 text-base leading-7 text-navy/68">
+            <div className="mt-7 max-w-[700px] space-y-4 text-base leading-7 text-navy/68">
               <p>
                 Too often, compliance becomes a collection of generic
                 templates, unnecessary paperwork, and processes nobody follows.
@@ -127,13 +127,13 @@ export default function WhyCompliance() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[760px] lg:mt-16">
+          <div className="relative mx-auto w-full max-w-[760px] lg:mr-0 lg:ml-auto lg:mt-16 lg:max-w-[520px]">
             <div
               aria-hidden="true"
               className="absolute -left-3 -top-20 hidden h-20 w-20 opacity-80 sm:block"
               style={{ backgroundImage: dots, backgroundSize: "18px 18px" }}
             />
-            <div className="relative min-h-[510px] overflow-hidden rounded-[1.6rem] border border-white/80 bg-[#d9e8f3] shadow-[0_24px_60px_rgba(14,42,78,0.16)] sm:min-h-[640px] lg:min-h-[680px] xl:min-h-[720px]">
+            <div className="relative min-h-[510px] overflow-hidden rounded-[1.6rem] border border-white/80 bg-[#d9e8f3] shadow-[0_24px_60px_rgba(14,42,78,0.16)] sm:min-h-[640px] lg:min-h-[540px] xl:min-h-[580px]">
               <Image
                 src="/nab.png"
                 alt="Security and compliance specialists in a strategy meeting"
