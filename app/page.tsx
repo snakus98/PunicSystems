@@ -9,12 +9,10 @@ import StartJourney from "@/components/StartJourney";
 import HowWeWork from "@/components/HowWeWork";
 import FaqSection from "@/components/FaqSection";
 import LetsTalk from "@/components/LetsTalk";
-import Support247 from "@/components/Support247";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Soc2Journey from "@/components/Soc2Journey";
 import IndustriesDeliverables from "@/components/IndustriesDeliverables";
 import Footer from "@/components/Footer";
-import FeedbackTab from "@/components/FeedbackTab";
 
 export default function Home() {
   return (
@@ -34,10 +32,8 @@ export default function Home() {
         <HowWeWork />
         <FaqSection />
         <LetsTalk />
-        <Support247 />
       </div>
       <Footer />
-      <FeedbackTab />
     </main>
   );
 }
