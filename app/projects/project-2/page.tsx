@@ -34,10 +34,10 @@ export const metadata = {
     "Case study: independent ISO/IEC 27001:2022 internal audit of Fairplay Digital GmbH's Information Security Management System.",
 };
 
-const ACCENT = "#4f35e0";
+const ACCENT = "#6e29f6";
 const NAVY = "#10122b";
 const BODY = "#3f445f";
-const GREEN = "#16a34a";
+const GREEN = "#01f6f7";
 const CARD_BORDER = "#e4e6f2";
 
 const META_ITEMS = [
@@ -167,8 +167,8 @@ export default function ProjectTwoPage() {
 
             {/* FairPlay Digital logo */}
             <div className="mt-5 flex items-baseline gap-2.5 text-[clamp(1.6rem,2.6vw,2.1rem)] font-extrabold tracking-[-0.02em]">
-              <span style={{ color: "#2ea6f7" }}>FairPlay</span>
-              <span style={{ color: "#16307c" }}>Digital</span>
+              <span style={{ color: "#01f6f7" }}>FairPlay</span>
+              <span style={{ color: "#081528" }}>Digital</span>
             </div>
 
             <h1
@@ -179,7 +179,7 @@ export default function ProjectTwoPage() {
             </h1>
             <p
               className="mt-1 text-[clamp(1.3rem,2.3vw,1.85rem)] font-bold tracking-[-0.01em]"
-              style={{ color: "#4340e0" }}
+              style={{ color: "#6e29f6" }}
             >
               ISO 27001 Internal Audit
             </p>
@@ -195,7 +195,7 @@ export default function ProjectTwoPage() {
                       i > 0 ? "sm:border-l sm:border-[#c9cde4] sm:pl-7" : ""
                     } ${i < META_ITEMS.length - 1 ? "sm:pr-7" : ""}`}
                   >
-                    <span className="mt-0.5 shrink-0" style={{ color: "#5b3df0" }}>
+                    <span className="mt-0.5 shrink-0" style={{ color: "#6e29f6" }}>
                       <MetaIcon size={26} strokeWidth={1.7} />
                     </span>
                     <div className="min-w-0">
@@ -314,7 +314,7 @@ export default function ProjectTwoPage() {
                   {i > 0 && (
                     <div className="hidden flex-1 items-center px-2 pt-[30px] sm:flex">
                       <span className="h-0 flex-1 border-t-2 border-dashed border-[#c3c9f2]" />
-                      <span className="h-0 w-0 border-y-[5px] border-l-[8px] border-y-transparent border-l-[#8b93e8]" />
+                      <span className="h-0 w-0 border-y-[5px] border-l-[8px] border-y-transparent border-l-[#6e29f6]" />
                     </div>
                   )}
                   <div className="flex items-center gap-4 sm:w-[130px] sm:flex-col sm:gap-0 sm:text-center">
@@ -356,7 +356,7 @@ export default function ProjectTwoPage() {
                       className="flex min-h-[62px] items-center gap-3 rounded-lg border bg-white py-2.5 pl-3.5 pr-4 shadow-[0_2px_8px_rgba(30,35,80,0.05)]"
                       style={{ borderColor: CARD_BORDER }}
                     >
-                      <ItemIcon size={21} strokeWidth={1.8} className="shrink-0" style={{ color: "#5b3df0" }} />
+                      <ItemIcon size={21} strokeWidth={1.8} className="shrink-0" style={{ color: "#6e29f6" }} />
                       <span
                         className="whitespace-pre-line text-[12.5px] font-bold leading-[1.35]"
                         style={{ color: NAVY }}
@@ -408,7 +408,7 @@ export default function ProjectTwoPage() {
                 <ul className="mt-5 space-y-4">
                   {card.points.map((point) => (
                     <li key={point} className="grid grid-cols-[10px_1fr] gap-2.5">
-                      <span className="mt-[0.45rem] h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "#5b3df0" }} />
+                      <span className="mt-[0.45rem] h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "#6e29f6" }} />
                       <span className="text-[12.5px] font-medium leading-[1.6]" style={{ color: BODY }}>
                         {point}
                       </span>
@@ -435,7 +435,7 @@ export default function ProjectTwoPage() {
                     i < SERVICES_DELIVERED.length - 1 ? "lg:pr-5" : ""
                   }`}
                 >
-                  <ServiceIcon size={26} strokeWidth={1.7} className="shrink-0" style={{ color: "#5b3df0" }} />
+                  <ServiceIcon size={26} strokeWidth={1.7} className="shrink-0" style={{ color: "#6e29f6" }} />
                   <p className="text-[12px] font-bold leading-[1.35]" style={{ color: NAVY }}>
                     {service.label}
                   </p>
@@ -448,7 +448,7 @@ export default function ProjectTwoPage() {
         {/* ===== CTA banner ===== */}
         <section
           className="relative mt-10 overflow-hidden rounded-2xl px-7 py-8 sm:px-10"
-          style={{ background: "linear-gradient(95deg, #4433e8 0%, #3f7cf7 100%)" }}
+          style={{ background: "linear-gradient(95deg, #01f6f7 0%, #6e29f6 100%)" }}
         >
           <div
             aria-hidden
@@ -479,7 +479,7 @@ export default function ProjectTwoPage() {
             <a
               href="/#lets-talk"
               className="inline-flex items-center gap-2.5 rounded-lg bg-white px-6 py-3 text-[14px] font-extrabold transition-transform hover:scale-[1.03]"
-              style={{ color: "#4433e8" }}
+              style={{ color: "#6e29f6" }}
             >
               Book a Consultation
               <ArrowRight size={17} strokeWidth={2.4} />

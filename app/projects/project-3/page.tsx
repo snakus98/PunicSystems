@@ -34,10 +34,10 @@ export const metadata = {
     "Case study: preparing Iterise Consulting's Information Security Management System for ISO/IEC 27001:2022 certification through an independent internal audit.",
 };
 
-const ACCENT = "#4f35e0";
+const ACCENT = "#6e29f6";
 const NAVY = "#10122b";
 const BODY = "#3f445f";
-const GREEN = "#16a34a";
+const GREEN = "#01f6f7";
 const CARD_BORDER = "#e4e6f2";
 
 const META_ITEMS = [
@@ -155,7 +155,7 @@ export default function ProjectThreePage() {
             </p>
             <span className="mt-2.5 block h-[3px] w-9 rounded-full" style={{ backgroundColor: ACCENT }} />
 
-            <p className="mt-5 text-[clamp(1.55rem,2.5vw,2rem)] font-extrabold tracking-[-0.02em]" style={{ color: "#2ea6f7" }}>
+            <p className="mt-5 text-[clamp(1.55rem,2.5vw,2rem)] font-extrabold tracking-[-0.02em]" style={{ color: "#01f6f7" }}>
               Iterise Consulting
             </p>
 
@@ -179,7 +179,7 @@ export default function ProjectThreePage() {
                       i > 0 ? "sm:border-l sm:border-[#c9cde4] sm:pl-6" : ""
                     } ${i < META_ITEMS.length - 1 ? "sm:pr-6" : ""}`}
                   >
-                    <span className="mt-0.5 shrink-0" style={{ color: "#5b3df0" }}>
+                    <span className="mt-0.5 shrink-0" style={{ color: "#6e29f6" }}>
                       <MetaIcon size={25} strokeWidth={1.7} />
                     </span>
                     <div className="min-w-0">
@@ -250,7 +250,7 @@ export default function ProjectThreePage() {
                 >
                   <span
                     className="flex h-12 w-12 items-center justify-center rounded-lg border bg-white"
-                    style={{ borderColor: "#ddd8f8", color: "#5b3df0" }}
+                    style={{ borderColor: "#ddd8f8", color: "#6e29f6" }}
                   >
                     <ItemIcon size={24} strokeWidth={1.8} />
                   </span>
@@ -325,7 +325,7 @@ export default function ProjectThreePage() {
                     {i > 0 && (
                       <div className="hidden flex-1 items-center px-1.5 pt-[24px] sm:flex">
                         <span className="h-0 flex-1 border-t-2 border-dashed border-[#c3c9f2]" />
-                        <span className="h-0 w-0 border-y-[4px] border-l-[7px] border-y-transparent border-l-[#8b93e8]" />
+                        <span className="h-0 w-0 border-y-[4px] border-l-[7px] border-y-transparent border-l-[#6e29f6]" />
                       </div>
                     )}
                     <div className="flex items-center gap-4 sm:w-[86px] sm:flex-col sm:gap-0 sm:text-center">
@@ -361,7 +361,7 @@ export default function ProjectThreePage() {
                 <ul className="mt-3.5 space-y-3">
                   {ASSESSMENT_INCLUDED.map((item) => (
                     <li key={item} className="grid grid-cols-[20px_1fr] items-start gap-2">
-                      <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#5b3df0" }} />
+                      <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#6e29f6" }} />
                       <span className="text-[12px] font-semibold leading-[1.45]" style={{ color: NAVY }}>
                         {item}
                       </span>
@@ -378,7 +378,7 @@ export default function ProjectThreePage() {
                   <ul className="space-y-3">
                     {KEY_AREAS_COL1.map((item) => (
                       <li key={item} className="grid grid-cols-[20px_1fr] items-start gap-2">
-                        <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#5b3df0" }} />
+                        <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#6e29f6" }} />
                         <span className="text-[12px] font-semibold leading-[1.45]" style={{ color: NAVY }}>
                           {item}
                         </span>
@@ -388,7 +388,7 @@ export default function ProjectThreePage() {
                   <ul className="space-y-3">
                     {KEY_AREAS_COL2.map((item) => (
                       <li key={item} className="grid grid-cols-[20px_1fr] items-start gap-2">
-                        <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#5b3df0" }} />
+                        <CheckCircle2 size={16} strokeWidth={2.1} className="mt-[1px]" style={{ color: "#6e29f6" }} />
                         <span className="text-[12px] font-semibold leading-[1.45]" style={{ color: NAVY }}>
                           {item}
                         </span>
@@ -454,7 +454,7 @@ export default function ProjectThreePage() {
               <ul className="mt-2.5 space-y-2.5 pl-[40px]">
                 {PRIORITY_FINDINGS.map((item) => (
                   <li key={item} className="grid grid-cols-[20px_1fr] items-start gap-2">
-                    <CheckCircle2 size={15} strokeWidth={2.1} className="mt-[2px]" style={{ color: "#5b3df0" }} />
+                    <CheckCircle2 size={15} strokeWidth={2.1} className="mt-[2px]" style={{ color: "#6e29f6" }} />
                     <span className="text-[12px] font-semibold leading-[1.5]" style={{ color: NAVY }}>
                       {item}
                     </span>
@@ -510,7 +510,7 @@ export default function ProjectThreePage() {
                   <div key={row.text} className="relative grid grid-cols-[46px_1fr] items-center gap-3">
                     <span
                       className="flex h-[46px] w-[46px] items-center justify-center rounded-lg border bg-white shadow-[0_2px_8px_rgba(30,35,80,0.06)]"
-                      style={{ borderColor: "#ddd8f8", color: "#5b3df0" }}
+                      style={{ borderColor: "#ddd8f8", color: "#6e29f6" }}
                     >
                       <RowIcon size={21} strokeWidth={1.8} />
                     </span>
@@ -548,7 +548,7 @@ export default function ProjectThreePage() {
                     i < SERVICES_DELIVERED.length - 1 ? "lg:pr-4" : ""
                   }`}
                 >
-                  <ServiceIcon size={24} strokeWidth={1.7} className="shrink-0" style={{ color: "#5b3df0" }} />
+                  <ServiceIcon size={24} strokeWidth={1.7} className="shrink-0" style={{ color: "#6e29f6" }} />
                   <p className="text-[11.5px] font-bold leading-[1.35]" style={{ color: NAVY }}>
                     {service.label}
                   </p>
@@ -561,7 +561,7 @@ export default function ProjectThreePage() {
         {/* ===== Business Impact ===== */}
         <section
           className="relative mt-8 overflow-hidden rounded-2xl px-7 py-8 sm:px-10"
-          style={{ background: "linear-gradient(95deg, #4433e8 0%, #3f7cf7 100%)" }}
+          style={{ background: "linear-gradient(95deg, #01f6f7 0%, #6e29f6 100%)" }}
         >
           {/* Bar chart illustration */}
           <div aria-hidden className="absolute bottom-0 right-10 hidden items-end gap-2.5 opacity-80 lg:flex">
@@ -609,7 +609,7 @@ export default function ProjectThreePage() {
         {/* ===== CTA banner ===== */}
         <section
           className="relative mt-6 overflow-hidden rounded-2xl px-7 py-8 sm:px-10"
-          style={{ background: "linear-gradient(95deg, #4433e8 0%, #3f7cf7 100%)" }}
+          style={{ background: "linear-gradient(95deg, #01f6f7 0%, #6e29f6 100%)" }}
         >
           <div
             aria-hidden
@@ -640,7 +640,7 @@ export default function ProjectThreePage() {
             <a
               href="/#lets-talk"
               className="inline-flex items-center gap-2.5 rounded-lg bg-white px-6 py-3 text-[14px] font-extrabold transition-transform hover:scale-[1.03]"
-              style={{ color: "#4433e8" }}
+              style={{ color: "#6e29f6" }}
             >
               Book a Consultation
               <ArrowRight size={17} strokeWidth={2.4} />

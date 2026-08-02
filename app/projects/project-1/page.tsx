@@ -39,7 +39,7 @@ const APPROACH_CARDS = [
     ],
     footer:
       "The objective was to translate legal requirements into day-to-day operational practices.",
-    accent: "#5b32f2",
+    accent: "#6e29f6",
     soft: "#f0ecff",
     icon: UsersRound,
   },
@@ -57,7 +57,7 @@ const APPROACH_CARDS = [
     ],
     footer:
       "Based on our findings, we developed prioritized recommendations tailored to the operational realities of the civil society sector.",
-    accent: "#365ad9",
+    accent: "#6e29f6",
     soft: "#edf2ff",
     icon: ClipboardCheck,
   },
@@ -77,7 +77,7 @@ const APPROACH_CARDS = [
     ],
     footer:
       "The framework was designed to be practical, sustainable, and adaptable as the organization evolves.",
-    accent: "#0096a4",
+    accent: "#01f6f7",
     soft: "#e9f8f8",
     icon: FileText,
   },
@@ -86,11 +86,11 @@ const APPROACH_CARDS = [
 /* ===== DPIA sections (Article 35) ===== */
 
 const DP = {
-  purple: "#7c3aed",
-  label: "#6d28f0",
-  indigo: "#4f46e5",
-  teal: "#0ea5a9",
-  blue: "#2f6bff",
+  purple: "#6e29f6",
+  label: "#6e29f6",
+  indigo: "#6e29f6",
+  teal: "#01f6f7",
+  blue: "#6e29f6",
   title: "#16192e",
   body: "#4a4f68",
   purpleBg: "#efeafe",
@@ -480,9 +480,9 @@ export default function ProjectOnePage() {
                     width: "calc(25% - 136px)",
                   }}
                 >
-                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#7c3aed]" />
-                  <span className="mx-1.5 flex-1 border-t-2 border-dashed border-[#7c3aed]" />
-                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#7c3aed]" />
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#6e29f6]" />
+                  <span className="mx-1.5 flex-1 border-t-2 border-dashed border-[#6e29f6]" />
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-[#6e29f6]" />
                 </div>
               ))}
 
@@ -545,11 +545,11 @@ export default function ProjectOnePage() {
           <DotGrid className="bottom-10 left-[4%] hidden h-16 w-24 opacity-60 lg:block" />
           <div
             aria-hidden
-            className="pointer-events-none absolute -right-24 top-1/3 hidden h-96 w-96 rounded-full border border-dashed border-[#0ea5a9]/25 lg:block"
+            className="pointer-events-none absolute -right-24 top-1/3 hidden h-96 w-96 rounded-full border border-dashed border-[#01f6f7]/25 lg:block"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute -right-6 top-[45%] hidden h-56 w-56 rounded-full border border-dashed border-[#7c3aed]/20 lg:block"
+            className="pointer-events-none absolute -right-6 top-[45%] hidden h-56 w-56 rounded-full border border-dashed border-[#6e29f6]/20 lg:block"
           />
 
           <div className="mx-auto max-w-[1240px]">
@@ -567,8 +567,8 @@ export default function ProjectOnePage() {
                     <div key={stage.num} className="contents">
                       {i > 0 && (
                         <div className="hidden flex-1 items-center px-3 pt-[44px] lg:flex">
-                          <span className="h-0 flex-1 border-t-[3px] border-dotted border-[#6d28f0]" />
-                          <span className="h-0 w-0 border-y-[7px] border-l-[11px] border-y-transparent border-l-[#6d28f0]" />
+                          <span className="h-0 flex-1 border-t-[3px] border-dotted border-[#6e29f6]" />
+                          <span className="h-0 w-0 border-y-[7px] border-l-[11px] border-y-transparent border-l-[#6e29f6]" />
                         </div>
                       )}
                       <div className="flex flex-col items-center text-center lg:w-[190px]">
