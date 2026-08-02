@@ -21,34 +21,34 @@ const REASONS: Reason[] = [
     icon: UserRound,
     number: "01",
     text: "A customer requires it.",
-    color: "text-[#0bbbd4]",
+    color: "text-[#01f6f7]",
     background: "bg-[#dcf8fc]",
   },
   {
     icon: MessageSquareText,
     number: "02",
     text: "An enterprise prospect asks difficult security questions.",
-    color: "text-[#377cf5]",
+    color: "text-[#6e29f6]",
     background: "bg-[#edf2ff]",
   },
   {
     icon: Landmark,
     number: "03",
     text: "A regulator expects accountability.",
-    color: "text-[#7847f4]",
+    color: "text-[#6e29f6]",
     background: "bg-[#f1ebff]",
   },
   {
     icon: TrendingUp,
     number: "04",
     text: "Or leadership wants stronger governance before the business grows further.",
-    color: "text-[#7847f4]",
+    color: "text-[#6e29f6]",
     background: "bg-[#f1ebff]",
   },
 ];
 
 const dots =
-  "radial-gradient(circle, rgba(27,102,173,0.58) 1.5px, transparent 1.7px)";
+  "radial-gradient(circle, rgba(1,246,247,0.58) 1.5px, transparent 1.7px)";
 
 export default function WhyCompliance() {
   return (
@@ -57,20 +57,20 @@ export default function WhyCompliance() {
       className="relative overflow-hidden bg-[#f8faff] py-16 sm:py-20 lg:py-24"
     >
       <div className="fine-grid pointer-events-none absolute right-0 top-0 h-full w-[24%] opacity-50" />
-      <div className="pointer-events-none absolute right-[-12rem] top-[7rem] hidden h-[48rem] w-[48rem] rounded-full border border-[#7658ff]/25 xl:block" />
-      <div className="pointer-events-none absolute right-[-6rem] top-[9.5rem] hidden h-[42rem] w-[42rem] rounded-full border border-[#1fc7df]/25 xl:block" />
+      <div className="pointer-events-none absolute right-[-12rem] top-[7rem] hidden h-[48rem] w-[48rem] rounded-full border border-[#6e29f6]/25 xl:block" />
+      <div className="pointer-events-none absolute right-[-6rem] top-[9.5rem] hidden h-[42rem] w-[42rem] rounded-full border border-[#01f6f7]/25 xl:block" />
 
       <div className="container-x relative !max-w-[1420px]">
         <div className="grid items-center gap-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-14 xl:gap-16">
           <div className="relative z-10">
-            <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#11adcf]">
+            <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-[#6e29f6]">
               Why Compliance
             </p>
             <h2 className="mt-5 max-w-[760px] text-[2.2rem] font-bold leading-[1.03] tracking-[-0.035em] text-navy min-[430px]:text-[2.65rem] sm:text-5xl xl:text-[3.65rem]">
               Compliance Should
               <br className="hidden sm:block" /> Help You Grow—
               <br />
-              <span className="bg-gradient-to-r from-[#12c7d9] via-[#358af0] to-[#7146f5] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#01f6f7] to-[#6e29f6] bg-clip-text text-transparent">
                 Not Slow You Down.
               </span>
             </h2>
@@ -147,14 +147,14 @@ export default function WhyCompliance() {
                 className="absolute bottom-5 left-4 h-40 w-20 opacity-90"
                 style={{
                   backgroundImage:
-                    "radial-gradient(circle, rgba(22,213,231,0.9) 2px, transparent 2.3px)",
+                    "radial-gradient(circle, rgba(1,246,247,0.9) 2px, transparent 2.3px)",
                   backgroundSize: "15px 15px",
                 }}
               />
             </div>
 
             <div className="relative z-10 mx-auto -mt-16 flex w-[88%] max-w-[390px] items-center gap-4 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_20px_45px_rgba(20,42,82,0.18)] backdrop-blur sm:absolute sm:-bottom-12 sm:left-1/2 sm:mt-0 sm:-translate-x-1/2 sm:p-6 xl:-bottom-16">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#1bcce4] via-[#397ff3] to-[#7643f5] text-white shadow-lg shadow-[#4b70ef]/20">
+              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#01f6f7] to-[#6e29f6] text-white shadow-lg shadow-[#6e29f6]/20">
                 <LockKeyhole size={29} />
               </span>
               <div>
@@ -162,7 +162,7 @@ export default function WhyCompliance() {
                 <p className="mt-1 text-sm leading-6 text-navy/62">
                   Build compliance into your business advantage.
                 </p>
-                <div className="mt-3 h-0.5 w-full rounded-full bg-gradient-to-r from-[#17cddd] to-[#7147f7]" />
+                <div className="mt-3 h-0.5 w-full rounded-full bg-gradient-to-r from-[#01f6f7] to-[#6e29f6]" />
               </div>
             </div>
           </div>

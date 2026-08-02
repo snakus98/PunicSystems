@@ -83,11 +83,11 @@ export default function FaqSection() {
             <details
               key={faq.question}
               open={index === 0}
-              className="group overflow-hidden rounded-2xl border border-transparent bg-white/95 shadow-[0_8px_24px_rgba(45,35,105,0.055)] open:border-[#c8bcff] open:shadow-[0_12px_32px_rgba(76,50,180,0.08)]"
+              className="group overflow-hidden rounded-2xl border border-transparent bg-white/95 shadow-[0_8px_24px_rgba(45,35,105,0.055)] open:border-[#6e29f6]/35 open:shadow-[0_12px_32px_rgba(110,41,246,0.08)]"
             >
               <summary className="flex min-h-[82px] cursor-pointer list-none items-center justify-between gap-5 px-6 py-5 text-left marker:hidden sm:min-h-[86px] sm:px-8 [&::-webkit-details-marker]:hidden">
                 <span className="flex items-center gap-6">
-                  <span className="relative hidden h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#6c4bff] text-[#6847f5] group-open:flex group-open:border-transparent group-open:bg-[#6847f5] group-open:text-white sm:flex">
+                  <span className="relative hidden h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#6e29f6] text-[#6e29f6] group-open:flex group-open:border-transparent group-open:bg-[#6e29f6] group-open:text-white sm:flex">
                     <span className="h-[2px] w-3.5 rounded-full bg-current" />
                     <span className="absolute h-3.5 w-[2px] rounded-full bg-current group-open:hidden" />
                   </span>
@@ -96,7 +96,7 @@ export default function FaqSection() {
                   </span>
                 </span>
 
-                <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#6c4bff] text-[#6847f5] group-open:border-transparent group-open:bg-[#6847f5] group-open:text-white sm:hidden">
+                <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#6e29f6] text-[#6e29f6] group-open:border-transparent group-open:bg-[#6e29f6] group-open:text-white sm:hidden">
                   <span className="h-[2px] w-3.5 rounded-full bg-current" />
                   <span className="absolute h-3.5 w-[2px] rounded-full bg-current group-open:hidden" />
                 </span>
@@ -124,7 +124,7 @@ function DotGrid({ className }: { className: string }) {
       {Array.from({ length: 30 }).map((_, index) => (
         <span
           key={index}
-          className="h-1 w-1 rounded-full bg-[#8b76f5]/65"
+          className="h-1 w-1 rounded-full bg-[#6e29f6]/65"
         />
       ))}
     </div>

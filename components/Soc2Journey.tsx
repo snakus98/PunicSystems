@@ -9,7 +9,7 @@ export default function Soc2Journey() {
     >
       <div className="soc2-rings relative flex items-center px-6 py-16 sm:px-12 lg:px-[8.2vw] lg:py-20">
         <div className="relative z-10 max-w-[510px]">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#bba7ff]">
+          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#01f6f7]">
             Security assurance
           </p>
           <h2
@@ -26,7 +26,7 @@ export default function Soc2Journey() {
           </p>
           <a
             href="#contact"
-            className="button-focus mt-8 inline-flex items-center gap-2 rounded-md bg-[#7628f5] px-7 py-4 text-sm font-bold text-white shadow-[0_12px_30px_rgba(36,10,90,0.25)] transition hover:-translate-y-0.5 hover:bg-[#843cff]"
+            className="button-focus mt-8 inline-flex items-center gap-2 rounded-md bg-[#6e29f6] px-7 py-4 text-sm font-bold text-white shadow-[0_12px_30px_rgba(36,10,90,0.25)] transition hover:-translate-y-0.5 hover:bg-[#6e29f6]/90"
           >
             Speak to our SOC 2 experts
             <ArrowRight aria-hidden="true" className="h-4 w-4" />

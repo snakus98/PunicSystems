@@ -10,7 +10,7 @@ export type Framework = {
 /* Ring of twelve stars used by the EU instruments (GDPR, NIS2, DORA, AI Act). */
 function EuStars({ r = 19, cx = 32, cy = 32 }: { r?: number; cx?: number; cy?: number }) {
   return (
-    <g fill="#f5c518">
+    <g fill="#01f6f7">
       {Array.from({ length: 12 }, (_, i) => {
         const a = (i / 12) * Math.PI * 2 - Math.PI / 2;
         return (
@@ -29,7 +29,7 @@ function EuLabel({ children }: { children: ReactNode }) {
       textAnchor="middle"
       fontSize="14"
       fontWeight="800"
-      fill="#ffffff"
+      fill="#eaeaea"
       style={{ font: "800 14px var(--font-sans)" }}
     >
       {children}
@@ -39,7 +39,7 @@ function EuLabel({ children }: { children: ReactNode }) {
 
 const stroke = {
   fill: "none",
-  stroke: "#ffffff",
+  stroke: "#eaeaea",
   strokeWidth: 2.4,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
@@ -49,7 +49,7 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "ISO/IEC 27001",
     subtitle: "Information Security",
-    tile: "#0b57a4",
+    tile: "#081528",
     mark: (
       <>
         <path d="M32 15l13 5v11c0 8.6-5.5 15.2-13 18-7.5-2.8-13-9.4-13-18V20l13-5z" {...stroke} />
@@ -73,7 +73,7 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "ISO/IEC 27701",
     subtitle: "Privacy Information",
-    tile: "#0f8a8f",
+    tile: "#6e29f6",
     mark: (
       <>
         <path d="M32 15l13 5v11c0 8.6-5.5 15.2-13 18-7.5-2.8-13-9.4-13-18V20l13-5z" {...stroke} />
@@ -85,7 +85,7 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "ISO 22301",
     subtitle: "Business Continuity",
-    tile: "#1462b4",
+    tile: "#081528",
     mark: (
       <>
         <path d="M46 32a14 14 0 11-4.3-10.1" {...stroke} />
@@ -97,12 +97,12 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "ISO 37301",
     subtitle: "Compliance Management",
-    tile: "#4f46e5",
+    tile: "#6e29f6",
     mark: (
       <>
         <rect x="20" y="17" width="24" height="30" rx="3.6" {...stroke} />
         <path d="M26 26h12M26 32h12M26 38h7" {...stroke} />
-        <circle cx="40.5" cy="40.5" r="7.5" fill="#4f46e5" stroke="#ffffff" strokeWidth={2.4} />
+        <circle cx="40.5" cy="40.5" r="7.5" fill="#6e29f6" stroke="#eaeaea" strokeWidth={2.4} />
         <path d="M37.2 40.6l2.4 2.4 4.4-4.6" {...stroke} strokeWidth={2.2} />
       </>
     ),
@@ -110,12 +110,12 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "ISO 31000",
     subtitle: "Risk Management",
-    tile: "#e0761a",
+    tile: "#081528",
     mark: (
       <>
         <path d="M18 42a14 14 0 1128 0" {...stroke} />
         <path d="M32 42l8.5-9.5" {...stroke} />
-        <circle cx="32" cy="42" r="2.6" fill="#ffffff" stroke="none" />
+        <circle cx="32" cy="42" r="2.6" fill="#01f6f7" stroke="none" />
         <path d="M18 42h4M42 42h4M21.5 30.5l2.6 2M42.5 30.5l-2.6 2" {...stroke} />
       </>
     ),
@@ -123,20 +123,20 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "GDPR",
     subtitle: "Data Protection",
-    tile: "#0b2a6b",
+    tile: "#081528",
     mark: (
       <>
         <EuStars />
-        <rect x="26" y="31" width="12" height="10" rx="2" fill="#ffffff" />
+        <rect x="26" y="31" width="12" height="10" rx="2" fill="#eaeaea" />
         <path d="M28.6 31v-2.9a3.4 3.4 0 016.8 0V31" {...stroke} />
-        <circle cx="32" cy="36" r="1.6" fill="#0b2a6b" />
+        <circle cx="32" cy="36" r="1.6" fill="#081528" />
       </>
     ),
   },
   {
     name: "NIS2",
     subtitle: "EU Directive",
-    tile: "#0b2a6b",
+    tile: "#081528",
     mark: (
       <>
         <EuStars />
@@ -147,7 +147,7 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "DORA",
     subtitle: "Digital Resilience",
-    tile: "#0b2a6b",
+    tile: "#081528",
     mark: (
       <>
         <EuStars />
@@ -159,7 +159,7 @@ export const FRAMEWORKS: Framework[] = [
   {
     name: "EU AI Act",
     subtitle: "AI Regulation",
-    tile: "#0b2a6b",
+    tile: "#081528",
     mark: (
       <>
         <EuStars />

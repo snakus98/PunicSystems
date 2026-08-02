@@ -47,10 +47,10 @@ const deliverables: IconItem[] = [
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#4d2fe0]">
+      <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#6e29f6]">
         {children}
       </p>
-      <span className="mt-4 block h-0.5 w-9 bg-[#6542f1]" />
+      <span className="mt-4 block h-0.5 w-9 bg-[#6e29f6]" />
     </div>
   );
 }
@@ -60,7 +60,7 @@ function IndustryCard({ icon: Icon, label }: IconItem) {
     <div className="flex min-h-[98px] items-center gap-5 rounded-md border border-[#dddaf6] bg-white/95 px-7 py-5 shadow-[0_10px_30px_rgba(51,35,130,0.04)]">
       <Icon
         aria-hidden="true"
-        className="h-11 w-11 shrink-0 stroke-[1.8] text-[#5937e6]"
+        className="h-11 w-11 shrink-0 stroke-[1.8] text-[#6e29f6]"
       />
       <span className="text-[15px] font-semibold leading-5 text-[#111c53]">
         {label}
@@ -75,7 +75,7 @@ function DeliverableCard({ icon: Icon, label }: IconItem) {
       <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f2f0ff]">
         <Icon
           aria-hidden="true"
-          className="h-7 w-7 stroke-[1.8] text-[#5740eb]"
+          className="h-7 w-7 stroke-[1.8] text-[#6e29f6]"
         />
       </span>
       <span className="text-[15px] font-semibold leading-5 text-[#101a4a]">
@@ -109,7 +109,7 @@ export default function IndustriesDeliverables() {
             <SectionEyebrow>Industries</SectionEyebrow>
             <h2 className="mt-5 text-[36px] font-bold leading-[1.15] tracking-[-0.035em] text-[#101b50] sm:text-[40px]">
               Our experience spans
-              <span className="block text-[#5638dc]">multiple industries.</span>
+              <span className="block text-[#6e29f6]">multiple industries.</span>
             </h2>
             <p className="mt-5 text-[15px] leading-6 text-[#222d54]">
               Our experience includes organizations in the IT Services and
@@ -127,9 +127,9 @@ export default function IndustriesDeliverables() {
             ))}
           </div>
 
-          <p className="mt-6 border-l-2 border-[#6542f1] pl-4 text-[15px] leading-6 text-[#253054]">
+          <p className="mt-6 border-l-2 border-[#6e29f6] pl-4 text-[15px] leading-6 text-[#253054]">
             Every industry has different operational challenges.
-            <strong className="ml-2 font-bold text-[#4e34d6]">
+            <strong className="ml-2 font-bold text-[#6e29f6]">
               Our approach adapts to your business—not the other way around.
             </strong>
           </p>
@@ -146,7 +146,7 @@ export default function IndustriesDeliverables() {
             <SectionEyebrow>What clients receive</SectionEyebrow>
             <h2 className="mt-5 text-[34px] font-bold leading-[1.15] tracking-[-0.035em] text-[#111d51] sm:text-[38px]">
               Tangible deliverables.
-              <span className="block text-[#5638dc]">Practical impact.</span>
+              <span className="block text-[#6e29f6]">Practical impact.</span>
             </h2>
             <p className="mt-5 text-[15px] leading-6 text-[#222d54]">
               Every project delivers tangible outcomes.
@@ -176,12 +176,12 @@ export default function IndustriesDeliverables() {
           </div>
 
           <div className="mt-6 flex items-center justify-center gap-5 rounded-xl bg-[#ece9ff] px-6 py-4">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#5632d9] text-white shadow-[0_8px_24px_rgba(86,50,217,0.25)]">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#6e29f6] text-white shadow-[0_8px_24px_rgba(110,41,246,0.25)]">
               <Target aria-hidden="true" className="h-7 w-7 stroke-[2]" />
             </span>
             <p className="text-center text-[17px] leading-6 text-[#17204f]">
               More importantly, your team understands how these documents support
-              <strong className="ml-1 font-bold text-[#4d32d3]">
+              <strong className="ml-1 font-bold text-[#6e29f6]">
                 day-to-day operations—not just certification.
               </strong>
             </p>

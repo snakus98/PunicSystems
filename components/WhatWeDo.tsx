@@ -19,10 +19,10 @@ const ROTATE_MS = 7000;
 function Eyebrow() {
   return (
     <div>
-      <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#2563eb]">
+      <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6e29f6]">
         What We Do
       </p>
-      <div className="mt-2 h-1 w-16 rounded-full bg-gradient-to-r from-[#22d3ee] via-[#3b82f6] to-[#6e29f6]" />
+      <div className="mt-2 h-1 w-16 rounded-full bg-gradient-to-r from-[#01f6f7] to-[#6e29f6]" />
     </div>
   );
 }
@@ -30,7 +30,7 @@ function Eyebrow() {
 function CheckItem({ label }: { label: string }) {
   return (
     <li className="flex items-start gap-3">
-      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#3b82f6] to-[#6e29f6] text-white">
+      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#01f6f7] to-[#6e29f6] text-white">
         <Check size={14} strokeWidth={3} />
       </span>
       <span className="text-sm font-medium leading-6 text-navy">{label}</span>
@@ -42,7 +42,7 @@ function CheckItem({ label }: { label: string }) {
 function ServiceCheckItem({ label }: { label: string }) {
   return (
     <li className="grid min-h-12 grid-cols-[1.5rem_minmax(0,1fr)] items-start gap-3 border-b border-dashed border-[#a9c2e8]/75 pb-2.5 pt-1">
-      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-[#168eef] to-[#6e29f6] text-white shadow-[0_4px_10px_rgba(59,130,246,0.22)]">
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-[#01f6f7] to-[#6e29f6] text-white shadow-[0_4px_10px_rgba(110,41,246,0.22)]">
         <Check size={14} strokeWidth={3} />
       </span>
       <span className="text-sm font-semibold leading-6 text-navy">{label}</span>
@@ -75,7 +75,7 @@ function ImageSlide({ data }: { data: ImageSlideData }) {
         <Eyebrow />
         <h2 className="mt-6 text-4xl font-bold leading-[1.02] sm:text-5xl">
           <span className="text-navy">{data.titleTop} </span>
-          <span className="bg-gradient-to-r from-[#3b82f6] to-[#6e29f6] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#01f6f7] to-[#6e29f6] bg-clip-text text-transparent">
             {data.titleBottom}
           </span>
         </h2>
@@ -86,10 +86,10 @@ function ImageSlide({ data }: { data: ImageSlideData }) {
         </p>
 
         <div className="mt-7 flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#3b82f6] text-[#3b82f6]">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#6e29f6] text-[#6e29f6]">
             <Users size={18} />
           </span>
-          <span className="text-lg font-bold text-[#2563eb]">
+          <span className="text-lg font-bold text-[#6e29f6]">
             {data.listLabel}
           </span>
         </div>
@@ -136,9 +136,9 @@ type TriCard = {
 const TRI_CARDS: TriCard[] = [
   {
     icon: Landmark,
-    gradient: "from-[#18bdf4] to-[#1557d8]",
-    titleColor: "text-[#0d47b8]",
-    borderColor: "from-[#0ea5e9] via-[#67e8f9] to-transparent",
+    gradient: "from-[#01f6f7] to-[#6e29f6]",
+    titleColor: "text-[#6e29f6]",
+    borderColor: "from-[#01f6f7] via-[#6e29f6] to-transparent",
     title: "Information Security Governance",
     lead: "Strong governance allows security to support business decisions instead of slowing them down.",
     paragraph:
@@ -151,9 +151,9 @@ const TRI_CARDS: TriCard[] = [
   },
   {
     icon: ClipboardCheck,
-    gradient: "from-[#9b5cf6] to-[#5b18d8]",
-    titleColor: "text-[#5b21d2]",
-    borderColor: "from-[#6d28d9] via-[#a78bfa] to-transparent",
+    gradient: "from-[#01f6f7] to-[#6e29f6]",
+    titleColor: "text-[#6e29f6]",
+    borderColor: "from-[#01f6f7] via-[#6e29f6] to-transparent",
     title: "Internal Audits",
     lead: "An internal audit should provide confidence—not surprises.",
     paragraph:
@@ -166,9 +166,9 @@ const TRI_CARDS: TriCard[] = [
   },
   {
     icon: Users,
-    gradient: "from-[#4b8cff] to-[#143bcb]",
-    titleColor: "text-[#1749d2]",
-    borderColor: "from-[#1749d2] via-[#88aaff] to-transparent",
+    gradient: "from-[#01f6f7] to-[#6e29f6]",
+    titleColor: "text-[#6e29f6]",
+    borderColor: "from-[#01f6f7] via-[#6e29f6] to-transparent",
     title: "Security Awareness",
     lead: "Technology alone cannot secure an organization. Employees make security decisions every day.",
     paragraph:
@@ -189,7 +189,7 @@ function GovernanceSlide() {
           <Eyebrow />
           <h2 className="mt-5 text-4xl font-bold leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-[3.35rem]">
             <span className="text-navy">Governance. </span>
-            <span className="text-[#2563eb]">Assurance. </span>
+            <span className="text-[#01f6f7]">Assurance. </span>
             <span className="text-[#6e29f6]">Awareness.</span>
           </h2>
           <p className="mt-5 max-w-[680px] text-base font-semibold leading-7 text-navy/75 lg:text-lg">
@@ -197,9 +197,9 @@ function GovernanceSlide() {
             readiness, and day-to-day security culture.
           </p>
           <div className="mt-6 flex gap-1.5" aria-hidden="true">
-            <span className="h-1 w-10 rounded-full bg-[#1257d8]" />
-            <span className="h-1 w-8 rounded-full bg-[#23b7eb]" />
-            <span className="h-1 w-7 rounded-full bg-[#8a4df4]" />
+            <span className="h-1 w-10 rounded-full bg-[#6e29f6]" />
+            <span className="h-1 w-8 rounded-full bg-[#01f6f7]" />
+            <span className="h-1 w-7 rounded-full bg-[#6e29f6]" />
           </div>
         </div>
 
@@ -332,7 +332,7 @@ export default function WhatWeDo() {
       onMouseLeave={() => setPaused(false)}
     >
       {/* soft decorative blobs */}
-      <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-[#3b82f6]/10 blur-3xl" />
+      <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-[#01f6f7]/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-[#6e29f6]/10 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-60 -left-36 h-[430px] w-[560px] rotate-[18deg] rounded-[50%] bg-[#cfe4ff]/65" />
       <div className="pointer-events-none absolute -bottom-72 right-[-8%] h-[500px] w-[680px] -rotate-[13deg] rounded-[50%] bg-[#d9e9ff]/70" />
@@ -344,7 +344,7 @@ export default function WhatWeDo() {
             type="button"
             onClick={prev}
             aria-label="Previous slide"
-            className="button-focus absolute left-1 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#b8cdf0] bg-white/95 text-[#1749b8] shadow-[0_10px_28px_rgba(31,85,168,0.18)] transition hover:-translate-x-0.5 hover:text-purple md:flex"
+            className="button-focus absolute left-1 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#6e29f6]/25 bg-white/95 text-[#6e29f6] shadow-[0_10px_28px_rgba(110,41,246,0.18)] transition hover:-translate-x-0.5 hover:text-purple md:flex"
           >
             <ChevronLeft size={22} />
           </button>
@@ -352,7 +352,7 @@ export default function WhatWeDo() {
             type="button"
             onClick={next}
             aria-label="Next slide"
-            className="button-focus absolute right-1 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#b8cdf0] bg-white/95 text-[#1749b8] shadow-[0_10px_28px_rgba(31,85,168,0.18)] transition hover:translate-x-0.5 hover:text-purple md:flex"
+            className="button-focus absolute right-1 top-1/2 z-20 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#6e29f6]/25 bg-white/95 text-[#6e29f6] shadow-[0_10px_28px_rgba(110,41,246,0.18)] transition hover:translate-x-0.5 hover:text-purple md:flex"
           >
             <ChevronRight size={22} />
           </button>
@@ -377,7 +377,7 @@ export default function WhatWeDo() {
               onClick={() => setIndex(i)}
               className={`h-1.5 rounded-full transition-all ${
                 i === index
-                  ? "w-10 bg-gradient-to-r from-[#1687ef] to-[#6e29f6] shadow-[0_2px_8px_rgba(59,130,246,0.35)]"
+                  ? "w-10 bg-gradient-to-r from-[#01f6f7] to-[#6e29f6] shadow-[0_2px_8px_rgba(110,41,246,0.35)]"
                   : "w-5 bg-[#a9bddb]/70 hover:bg-[#7895bf]"
               }`}
             />

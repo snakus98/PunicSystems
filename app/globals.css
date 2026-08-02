@@ -20,24 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
- * Home page sections each fill the viewport so one screen shows one section.
- * Padding is viewport-relative so tall content still has room on short screens.
- * `.grid` roots keep their own layout; only block-level roots get centred.
- */
-@media (min-width: 1024px) {
-  .home-sections > * {
-    min-height: 100svh;
-    padding-block: clamp(0.75rem, 2.5vh, 3.5rem);
-  }
-
-  .home-sections > *:not(.grid) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 body {
   font-family: var(--font-sans);
   color: var(--color-ink);

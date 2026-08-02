@@ -22,35 +22,35 @@ const REASONS: Reason[] = [
     number: 1,
     text: "Senior consultants on every engagement",
     icon: UserCheck,
-    color: "text-[#5b2ce5]",
+    color: "text-[#6e29f6]",
     softColor: "from-[#eee8ff] to-white",
   },
   {
     number: 2,
     text: "Tailored documentation instead of copied templates",
     icon: FileText,
-    color: "text-[#6331e8]",
+    color: "text-[#6e29f6]",
     softColor: "from-[#eee8ff] to-white",
   },
   {
     number: 3,
     text: "Clear communication with technical and executive teams",
     icon: MessagesSquare,
-    color: "text-[#5340e9]",
+    color: "text-[#6e29f6]",
     softColor: "from-[#edeaff] to-white",
   },
   {
     number: 4,
     text: "Practical recommendations your organization can actually implement",
     icon: ChartNoAxesCombined,
-    color: "text-[#3b56df]",
+    color: "text-[#6e29f6]",
     softColor: "from-[#e7eeff] to-white",
   },
   {
     number: 5,
     text: "A focus on long-term resilience rather than short-term certification",
     icon: Target,
-    color: "text-[#0faaa9]",
+    color: "text-[#01f6f7]",
     softColor: "from-[#e2fbf8] to-white",
   },
 ];
@@ -69,31 +69,31 @@ export default function WhyChooseUs() {
       <div
         className="pointer-events-none absolute right-4 top-3 h-20 w-28 opacity-35"
         style={{
-          backgroundImage: "radial-gradient(#8569f2 2px, transparent 2px)",
+          backgroundImage: "radial-gradient(rgba(110,41,246,0.65) 2px, transparent 2px)",
           backgroundSize: "16px 16px",
         }}
       />
       <div
         className="pointer-events-none absolute bottom-32 left-1 h-20 w-28 opacity-25"
         style={{
-          backgroundImage: "radial-gradient(#8569f2 2px, transparent 2px)",
+          backgroundImage: "radial-gradient(rgba(110,41,246,0.65) 2px, transparent 2px)",
           backgroundSize: "16px 16px",
         }}
       />
-      <div className="pointer-events-none absolute -bottom-80 -left-52 h-[520px] w-[520px] rounded-full border border-[#b8a7ff]/30 shadow-[0_0_0_22px_rgba(184,167,255,0.05),0_0_0_44px_rgba(184,167,255,0.045),0_0_0_66px_rgba(184,167,255,0.04)]" />
-      <div className="pointer-events-none absolute -bottom-80 -right-52 h-[520px] w-[520px] rounded-full border border-[#61d9df]/25 shadow-[0_0_0_22px_rgba(97,217,223,0.04),0_0_0_44px_rgba(97,217,223,0.035),0_0_0_66px_rgba(97,217,223,0.03)]" />
+      <div className="pointer-events-none absolute -bottom-80 -left-52 h-[520px] w-[520px] rounded-full border border-[#6e29f6]/30 shadow-[0_0_0_22px_rgba(110,41,246,0.05),0_0_0_44px_rgba(110,41,246,0.045),0_0_0_66px_rgba(110,41,246,0.04)]" />
+      <div className="pointer-events-none absolute -bottom-80 -right-52 h-[520px] w-[520px] rounded-full border border-[#01f6f7]/25 shadow-[0_0_0_22px_rgba(1,246,247,0.04),0_0_0_44px_rgba(1,246,247,0.035),0_0_0_66px_rgba(1,246,247,0.03)]" />
 
       <div className="container-x relative !max-w-[1440px]">
         <div className="relative min-h-[500px] lg:min-h-[520px]">
           <div className="relative z-10 max-w-[650px] pt-3 lg:pt-5">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#6535dc] sm:text-base">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#6e29f6] sm:text-base">
               Why Organizations Choose Us
             </p>
-            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#6331e8] to-[#8b5cf6]" />
+            <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#01f6f7] to-[#6e29f6]" />
 
             <h2 className="mt-8 text-[2.05rem] font-bold leading-[1.08] tracking-[-0.035em] text-navy min-[430px]:text-[2.65rem] sm:text-5xl lg:text-[3.75rem]">
               Because they want{" "}
-              <span className="text-[#653be2]">experienced advisors—</span>
+              <span className="text-[#6e29f6]">experienced advisors—</span>
               <br />
               not template sellers.
             </h2>
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
               We believe every organization deserves a security program built
               around its own risks, culture, and business objectives.
             </p>
-            <div className="mt-8 h-1 w-16 rounded-full bg-gradient-to-r from-[#6233e9] to-[#8b5cf6]" />
+            <div className="mt-8 h-1 w-16 rounded-full bg-gradient-to-r from-[#01f6f7] to-[#6e29f6]" />
           </div>
 
           <div className="relative mt-10 h-[310px] overflow-hidden rounded-[1.75rem] lg:absolute lg:-right-5 lg:top-0 lg:mt-0 lg:h-[520px] lg:w-[61%] lg:overflow-visible lg:rounded-none">
@@ -120,7 +120,7 @@ export default function WhyChooseUs() {
 
         <div className="relative mt-12 lg:-mt-8 lg:pt-36">
           <div className="absolute left-1/2 top-0 z-20 hidden -translate-x-1/2 rounded-full bg-white/95 p-3 shadow-[0_18px_45px_rgba(71,56,180,0.16)] ring-1 ring-[#d4cdfb] lg:block">
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-[#f4f0ff] to-white text-[#5b2ce5] ring-1 ring-[#d9d1fa]">
+            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-[#f4f0ff] to-white text-[#6e29f6] ring-1 ring-[#6e29f6]/20">
               <ShieldCheck size={62} strokeWidth={1.8} />
             </div>
           </div>
@@ -133,9 +133,9 @@ export default function WhyChooseUs() {
           >
             <defs>
               <linearGradient id="reason-line" x1="0" x2="1">
-                <stop offset="0" stopColor="#8b5cf6" stopOpacity="0.45" />
-                <stop offset="0.5" stopColor="#6953e9" stopOpacity="0.5" />
-                <stop offset="1" stopColor="#25b8c3" stopOpacity="0.4" />
+                <stop offset="0" stopColor="#6e29f6" stopOpacity="0.45" />
+                <stop offset="0.5" stopColor="#6e29f6" stopOpacity="0.5" />
+                <stop offset="1" stopColor="#01f6f7" stopOpacity="0.4" />
               </linearGradient>
             </defs>
             <path d="M500 122 Q395 125 56 192" fill="none" stroke="url(#reason-line)" strokeWidth="1.4" />
